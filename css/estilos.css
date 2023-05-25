@@ -28,6 +28,33 @@ header{
 /* Sección 2 - ACERCA DE */
 .acercaDe{
     background-color: rgb(218, 218, 137);
+    display: flex;
+    flex-direction: column;
+}
+.acercaDe .acercaDeContenido{
+    display: flex;
+}
+.acercaDe .acercaDeContenido .acercaDeContenidoData{
+    display: flex;
+    flex-direction: column;    
+}
+.acercaDe .acercaDeContenido .acercaDeContenidoData .acercaDeContenidoDataUno{
+    display: flex;       
+}
+.acercaDe .acercaDeContenido .acercaDeContenidoData .acercaDeContenidoDataDos{
+    display: flex;       
+}
+.acercaDe .acercaDeContenidoRedes{
+    display: flex;
+}
+.acercaDe .acercaDeContenidoRedes div{    
+    background-color: white;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+}
+.acercaDe .acercaDeContenidoRedes .circuloVerde{
+    background-color: #68E9CF;    
 }
 
 /* Sección 3 - ESPECIALIZACIÓN */
