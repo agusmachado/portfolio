@@ -20,8 +20,9 @@ header{
 }
 
 /* Sección 1 - HERO */
-.hero{
-    background-color: aquamarine;
+.hero{    
+    display: flex;
+    background-image: url(../img/fondo.jpg);
 }
 
 /* Sección 2 - ACERCA DE */
