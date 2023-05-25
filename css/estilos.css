@@ -12,27 +12,42 @@ a{
     color: black;
 }
 
+/* HEADER */
 header{
     background-color: aqua;
 }
+
+/* Sección 1 - HERO */
 .hero{
     background-color: aquamarine;
 }
+
+/* Sección 2 - ACERCA DE */
 .acercaDe{
     background-color: rgb(218, 218, 137);
 }
+
+/* Sección 3 - ESPECIALIZACIÓN */
 .especializacion{
     background-color: cadetblue;
 }
+
+/* Sección 4 - EXPERIENCIA */
 .experiencia{
     background-color: coral;
 }
+
+/* Sección 5 - HABILIDADES */
 .habilidades{
     background-color: cyan;
 }
+
+/* Sección 6 - PORTFOLIO */
 .portfolio{
     background-color: cornflowerblue;
 }
+
+/* Sección 7 - CONTACTO */
 .contacto{
     background-color: darkcyan;
 }
