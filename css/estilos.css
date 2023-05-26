@@ -19,20 +19,22 @@ header{
     justify-content: space-evenly;
 }
 
-/* Sección 1 - HERO */
+/* SECCIÓN 1 - HERO */
 .hero{    
     display: flex;
-    background-image: url(../img/fondo.jpg);
-    /* overflow: hidden; */
+    background-image: url(../img/fondo.jpg);    
 }
 
 
-/* Sección 2 - ACERCA DE */
+
+/* SECCIÓN 2 - ACERCA DE */
 .acercaDe{
     background-color: rgb(218, 218, 137);
     display: flex;
     flex-direction: column;
 }
+
+/* sección 2 - contenido */
 .acercaDe .acercaDeContenido{
     display: flex;
 }
@@ -46,6 +48,8 @@ header{
 .acercaDe .acercaDeContenidoDataDos{
     display: flex;       
 }
+
+/* sección 2 - contenido Redes */
 .acercaDe .acercaDeContenidoRedes{
     display: flex;
 }
@@ -59,7 +63,9 @@ header{
     background-color: #68E9CF;    
 }
 
-/* Sección 3 - ESPECIALIZACIÓN */
+
+
+/* SECCIÓN 3 - ESPECIALIZACIÓN */
 .especializacion{
     background-color: cadetblue;
     display: flex;
@@ -68,12 +74,16 @@ header{
 .especializacion .especializacionContenido{
     display: flex;
 }
+
+/* sección 3 - flechitas */
 .especializacion .flechitas{
     display: flex;
     justify-content: flex-end;
 }
 
-/* Sección 4 - EXPERIENCIA */
+
+
+/* SECCIÓN 4 - EXPERIENCIA */
 .experiencia{
     background-color: coral;
     display: flex;
@@ -88,20 +98,27 @@ header{
 }
 .experiencia .experienciaDatos{
     display: flex;
+    justify-content: center;
 }
 
 
-/* Sección 5 - HABILIDADES */
+/* SECCIÓN 5 - HABILIDADES */
 .habilidades{
     background-color: cyan;
 }
+.habilidades .habilidadesTotales{
+    display: flex;
+    justify-content: center;
+}
 
-/* Sección 6 - PORTFOLIO */
+/* sección 5 - botón CV */
+
+/* SECCIÓN 6 - PORTFOLIO */
 .portfolio{
     background-color: cornflowerblue;
 }
 
-/* Sección 7 - CONTACTO */
+/* SECCIÓN 7 - CONTACTO */
 .contacto{
     background-color: darkcyan;
 }
