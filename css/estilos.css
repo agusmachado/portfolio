@@ -23,7 +23,9 @@ header{
 .hero{    
     display: flex;
     background-image: url(../img/fondo.jpg);
+    /* overflow: hidden; */
 }
+
 
 /* Sección 2 - ACERCA DE */
 .acercaDe{
@@ -34,14 +36,14 @@ header{
 .acercaDe .acercaDeContenido{
     display: flex;
 }
-.acercaDe .acercaDeContenido .acercaDeContenidoData{
+.acercaDe  .acercaDeContenidoData{
     display: flex;
     flex-direction: column;    
 }
-.acercaDe .acercaDeContenido .acercaDeContenidoData .acercaDeContenidoDataUno{
+.acercaDe .acercaDeContenidoDataUno{
     display: flex;       
 }
-.acercaDe .acercaDeContenido .acercaDeContenidoData .acercaDeContenidoDataDos{
+.acercaDe .acercaDeContenidoDataDos{
     display: flex;       
 }
 .acercaDe .acercaDeContenidoRedes{
@@ -60,6 +62,15 @@ header{
 /* Sección 3 - ESPECIALIZACIÓN */
 .especializacion{
     background-color: cadetblue;
+    display: flex;
+    flex-direction: column;
+}
+.especializacion .especializacionContenido{
+    display: flex;
+}
+.especializacion .flechitas{
+    display: flex;
+    justify-content: flex-end;
 }
 
 /* Sección 4 - EXPERIENCIA */
