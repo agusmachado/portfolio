@@ -112,13 +112,44 @@ header{
 }
 
 /* sección 5 - botón CV */
+.habilidades .descargarCV{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
 
 /* SECCIÓN 6 - PORTFOLIO */
 .portfolio{
     background-color: cornflowerblue;
 }
+.portfolio .portfolioMuestra{
+    display: flex;
+    justify-content: space-around;    
+}
+.portfolio .portfolioMuestra .portfolioMuestraUno{
+    height: 35vh;
+    width: 40%;
+    background-color: pink;    
+}
+.portfolio .portfolioMuestra .portfolioMuestraDos{
+    height: 35vh;
+    width: 40%;
+    background-color: rgb(57, 134, 223);    
+}
+
+/* sección 6 - flechitas */
+.portfolio .flechitas{
+    display: flex;
+    justify-content: flex-end;
+}
+
 
 /* SECCIÓN 7 - CONTACTO */
 .contacto{
     background-color: darkcyan;
+}
+.contacto .contenidoMapa{
+    display: flex;
+    justify-content: center;
 }
