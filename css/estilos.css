@@ -14,16 +14,111 @@ a{
 
 /* HEADER */
 header{
-    background-color: aqua;
+    padding-bottom: 40%;
+    position: fixed;
+    background: none;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-evenly; 
+    align-items: center; 
+    width: 100%;
+    height: 20vh;  
+    z-index: 1;
+}
+header h1{
+    font-size: 2rem;
+    color: white;
+    font-weight: 800;
+    
+}
+header nav a{
+    font-size: 1.4rem;
+    color: white;
+}
+header .barras{
+    height: 6vh;
+    width: 8%;
+    /* border: 2px solid white; */
+    display: flex;    
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;      
+}
+header .barras div{    
+    padding: 4% 2% 4% 2%;
+}
+header .barras .uno{    
+    width: 6rem;
+    height: 0.2rem;
+    background: white;    
+}
+header .barras .dos{    
+    width: 6rem;
+    height: 0.2rem;
+    background: white;    
 }
 
+
+
 /* SECCIÓN 1 - HERO */
-.hero{    
-    display: flex;
-    background-image: url(../img/fondo.jpg);    
+
+.hero:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/fondo.jpg);
+    background-repeat: no-repeat;
+    opacity: 0.95;
+   }
+.hero .heroGeneral{ 
+    padding: 9% 0 0 0;
+    display: flex; 
+    justify-content: space-around; 
 }
+.hero .heroGeneral .contenidoHero{
+    margin-left: 5%;
+    display: flex;      
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+    border: 4px solid paleturquoise;
+}
+.hero .tituloIzquierdaUno{
+    display: flex;
+}
+.hero .contenidoHero .tituloIzquierda h1{
+    font-size: 3rem;
+    color: white;
+    font-weight: 800;
+}
+.hero .contenidoHero .tituloIzquierda .hUnoVerde{    
+    color: #68E9CF;    
+}
+.hero .contenidoHero .tituloIzquierda h2{
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 400; 
+}
+.hero .contenidoHero p{
+    font-size: 1.5rem;
+    color: #C3C3C3; 
+    /* margin-right: 20%;  */   
+}
+.hero .imgHero{    
+    display: flex;
+    align-items: end;
+    border: 2px solid chartreuse;
+    margin-right: 2%;
+}
+.hero img{    
+    height: 80vh;   
+}
+
+
+  
+   
 
 
 
