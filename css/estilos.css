@@ -12,9 +12,12 @@ a{
     color: black;
 }
 
+/* TITULO IZQUIERDA */
+
+
+
 /* HEADER */
-header{
-    padding-bottom: 40%;
+header{       
     position: fixed;
     background: none;
     display: flex;
@@ -23,6 +26,7 @@ header{
     width: 100%;
     height: 20vh;  
     z-index: 1;
+    border: 2px solid white;
 }
 header h1{
     font-size: 2rem;
@@ -30,10 +34,23 @@ header h1{
     font-weight: 800;
     
 }
-header nav a{
-    font-size: 1.4rem;
-    color: white;
+header nav{
+    border: 2px solid white;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
+header nav a{    
+    font-size: 1.4rem;
+    color: white;  
+    font-size: 1rem;
+    cursor: pointer;
+}
+header nav a:hover{
+    text-decoration: underline;    
+}
+
 header .barras{
     height: 6vh;
     width: 8%;
@@ -67,81 +84,133 @@ header .barras .dos{
     z-index: -1;
     width: 100%;
     height: 100vh;
-    background-image: url(../img/05.jpg);
+    background-image: 
+    linear-gradient(360deg,
+    rgba(0, 0, 0, 1) 10%,
+    rgba(0, 0, 0, .8) 20%,
+    rgba(0, 0, 0, .4) 40%,
+    rgba(0, 0, 0, 0) 100%), 
+    url(../img/05.jpg);    
     background-repeat: no-repeat;
-    opacity: 0.95;
+    background-size: cover;
+    opacity: 0.95;    
    }
 .hero .heroGeneral{ 
-    padding: 9% 0 0 0;
+    padding: 12% 2% 0 2%;
     display: flex; 
-    justify-content: space-around; 
+    justify-content: space-between;     
 }
 .hero .heroGeneral .contenidoHero{
     margin-left: 5%;
     display: flex;      
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    width: 55%;
+    align-items: center;   
     border: 4px solid paleturquoise;
 }
-.hero .tituloIzquierdaUno{
-    display: flex;
+.hero .tituloIzquierda{
+    padding-bottom: 5%;     
 }
-.hero .contenidoHero .tituloIzquierda h1{
-    font-size: 3rem;
+.hero .tituloIzquierdaUno{
+    display: flex;        
+}
+.hero .contenidoHero .tituloIzquierda h1{    
+    font-size: 4.5rem;
     color: white;
     font-weight: 800;
 }
-.hero .contenidoHero .tituloIzquierda .hUnoVerde{    
+.hero .contenidoHero .tituloIzquierda .hUnoVerde{  
+    padding-right: 1%;  
     color: #68E9CF;    
 }
-.hero .contenidoHero .tituloIzquierda h2{
-    font-size: 1.5rem;
+.hero .contenidoHero h2{
+    padding-bottom: 5%;
+    font-size: 1.8rem;
     color: white;
-    font-weight: 400; 
+    font-weight: 600; 
 }
 .hero .contenidoHero p{
     font-size: 1.5rem;
     color: #C3C3C3; 
-    /* margin-right: 20%;  */   
+    width: 80%; 
+    padding-bottom: 5%;    
 }
 .hero .imgHero{    
     display: flex;
     align-items: end;
-    border: 2px solid chartreuse;
-    margin-right: 2%;
+    /* border: 2px solid chartreuse; */
+    background-image: linear-gradient(360deg,
+    rgba(0, 0, 0, 1) 3%, 
+    rgba(0, 0, 0, .8) 20%,
+    rgba(0, 0, 0, .4) 40%,
+    rgba(0, 0, 0, .3) 45%,
+    rgba(0, 0, 0, .2) 50%,
+    rgba(0, 0, 0, 0) 100%),  url(../img/retrato\ sin\ fondo\ 02.png);   
+    height: 75vh; 
+    background-repeat: no-repeat;
+    background-position: 70% 100%;
+    width: 100%;
+    background-size: 68vh; 
+} 
+
+.hero .descargaCV p{
+    color: white;
 }
-.hero img{    
-    height: 80vh;   
+
+.hero .contenidoHeroDos i{
+    height: 15vh; 
+       
 }
-
-
-  
-   
-
 
 
 /* SECCIÓN 2 - ACERCA DE */
 .acercaDe{
+    padding: 0 2% 0 2%;
     background-color: rgb(218, 218, 137);
     display: flex;
     flex-direction: column;
+    border: 2px solid black;
+}
+
+/* sección 2 - Título Izquierda */
+.acercaDe .tituloIzquierda h1{    
+    font-size: 4rem;
+    color: white;
+    font-weight: 800;
 }
 
 /* sección 2 - contenido */
 .acercaDe .acercaDeContenido{
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.acercaDe .acercaDeContenido .acercaDeContenidoLorem{
+    width: 50%;
+}
+.acercaDe .acercaDeContenido .acercaDeContenidoDataUno{
+    width: 50%;
+
 }
 .acercaDe  .acercaDeContenidoData{
     display: flex;
-    flex-direction: column;    
+    flex-direction: column; 
+    width: 100%;   
 }
-.acercaDe .acercaDeContenidoDataUno{
-    display: flex;       
+.acercaDe .acercaDeContenidoDataUnoBis{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid black;  
+    width: 100%;     
 }
 .acercaDe .acercaDeContenidoDataDos{
-    display: flex;       
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid black;    
+    width: 100%;   
 }
 
 /* sección 2 - contenido Redes */
