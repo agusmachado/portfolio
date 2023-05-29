@@ -19,13 +19,13 @@ a{
 /* HEADER */
 header{       
     position: fixed;
-    background: none;
+    background: black;
     display: flex;
     justify-content: space-evenly; 
     align-items: center; 
     width: 100%;
     height: 20vh;  
-    z-index: 1;
+    z-index: 1;  
     border: 2px solid white;
 }
 header h1{
@@ -149,10 +149,9 @@ header .barras .dos{
     height: 75vh;
     z-index: -1;
 }
-.hero .descargaCV p{
+.hero .descargarCV p{
     color: white;
 }
-
 .hero .contenidoHeroDos i{
     height: 15vh; 
        
@@ -161,18 +160,21 @@ header .barras .dos{
 
 /* SECCIÓN 2 - ACERCA DE */
 .acercaDe{
-    padding: 0 2% 0 2%;
+    padding: 0 2% 0 2%;    
     display: flex;
     flex-direction: column;
     background-color: rgb(26, 26, 26);
     /* border: 2px solid rgb(255, 255, 255);   */  
 }
+.acercaDe .container{
+    padding: 0 5% 0 5%; 
+    height: 80vh;   
+    border: 2px solid rgb(255, 255, 255);
+}
 
 /* sección 2 - Título Izquierda */
-.acercaDe .tituloIzquierda{
-    margin-left: 5%;
-}
-.acercaDe .tituloIzquierda h1{      
+
+.acercaDe .tituloIzquierda h1{          
     font-size: 4rem;
     color: white;
     font-weight: 800;
@@ -180,47 +182,71 @@ header .barras .dos{
 .acercaDe .tituloIzquierda h3{      
     font-size: 4rem;
     padding-bottom: 5%;
-    font-size: 1.8rem;
-    color: white;
+    font-size: 2.3rem;
+    color: #68E9CF;
     font-weight: 600; 
 }
 
 /* sección 2 - contenido */
-.acercaDe .acercaDeContenido{
-    margin-left: 5%;
+.acercaDe .acercaDeContenido{    
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
-    height: 90vh;
+    align-items: center;    
     border: 2px solid rgb(255, 255, 255);   
 }
 .acercaDe .acercaDeContenido .acercaDeContenidoLorem{
     width: 100%;
+    font-size: 2.2rem;
+    margin-right: 10%;
     color: #ECECEC;
+    
     border: 2px solid rgb(255, 255, 255);   
 }
 .acercaDe .acercaDeContenido .acercaDeContenidoDataUno{
-    width: 100%;
+    width: 100%;    
     border: 2px solid rgb(255, 255, 255);   
 }
 .acercaDe  .acercaDeContenidoData{
     display: flex;
     flex-direction: column; 
-    width: 100%;   
+    width: 80%;      
+    color: white;
 }
-.acercaDe .acercaDeContenidoDataUnoBis{
+.acercaDe .acercaDeContenidoDataUno{
     display: flex;
-    justify-content: space-between;
-    align-items: center;    
-    width: 100%;   
-    border: 2px solid rgb(255, 255, 255);     
+    justify-content: space-around;
 }
+.acercaDe .acercaDeContenidoData div{
+    border: 2px solid rgb(255, 255, 255);
+}
+.acercaDe .acercaDeContenidoDataUno .uno{
+    margin-bottom: 5%;
+}
+.acercaDe .acercaDeContenidoDataUno p{
+    color: white;
+    font-size: 1.5rem;    
+}
+.acercaDe .acercaDeContenidoDataUno h3{
+    color: rgb(104, 224, 207);
+    font-size: 1.5rem;    
+}
+.acercaDe .acercaDeContenidoDataUnoBis{ 
+    padding: 5% 0 5% 0;   
+    display: flex;
+    flex-direction: column;   
+    width: 100%;   
+         
+}
+
 .acercaDe .acercaDeContenidoDataDos{
+    padding: 5% 0 5% 0;
     display: flex; 
-    justify-content: space-between;
-    align-items: center;       
+    flex-direction: column; 
     width: 100%;
     border: 2px solid rgb(255, 255, 255);      
+}
+.acercaDe .acercaDeContenidoDataDos div{
+    border: 2px solid rgb(255, 255, 255);  
 }
 
 /* sección 2 - contenido Redes */
@@ -232,26 +258,39 @@ header .barras .dos{
 }
 .acercaDe .acercaDeContenidoRedes div{    
     background-color: white;
-    height: 5rem;
-    width: 5rem;
-    border-radius: 50%;    
-    align-items: center;    
+    color: rgb(104, 224, 207);
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    display: flex;   
+    justify-content: center; 
+    align-items: center;   
+    font-size: 2rem;
+    border: none; 
 }
 .acercaDe .acercaDeContenidoRedes .circuloVerde{
-    background-color: #68E9CF;    
+    background-color: #68E9CF; 
+    color: white;   
 }
 
 /* sección 2 - Descargar CV */
 .acercaDe .descargarCV{
-    margin-left: 5%;
+    margin-left: 0;
 }
-.acercaDe .descargarCV p{    
+.acercaDe .descargarCV div{    
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;       
+    border: 2px solid rgb(104, 224, 207);
+    background: none;
+    
+}
+.acercaDe .descargarCV p{ 
+    font-size: 2rem;   
     color: white;
 }
-
-.acercaDe .descargarCV i{
-    height: 15vh; 
-       
+.acercaDe .container .descargarCV i{
+    font-size: 2rem;            
 }
 
 /* SECCIÓN 3 - ESPECIALIZACIÓN */
