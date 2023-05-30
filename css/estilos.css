@@ -19,7 +19,11 @@ a{
 /* HEADER */
 header{       
     position: fixed;
-    background: black;
+    /* background-color: black; */
+    background: linear-gradient(180deg,
+    rgba(27, 27, 27, 1) 30%,   
+    rgba(25, 25, 25, .7) 75%,
+    rgba(25, 25, 25, 0) 100%);
     display: flex;
     justify-content: space-evenly; 
     align-items: center; 
@@ -38,17 +42,30 @@ header nav{
     width: 50%;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: center;    
     /* border: 2px solid white; */
 }
 header nav a{    
     font-size: 1.4rem;
+    position: relative;
     color: white;  
     font-size: 1rem;
+    text-decoration: none;
+    letter-spacing: 0.1rem;
     cursor: pointer;
 }
-header nav a:hover{
-    text-decoration: underline;    
+a::after{
+    content: "";
+    position: absolute;
+    background-color: #68E9CF;
+    height: 0.2rem;
+    width: 0;
+    left: 0;
+    bottom: -0.3rem; 
+    transition: 0.3s;   
+}
+header nav a:hover::after{
+    width: 100%;
 }
 
 header .barras{
@@ -307,8 +324,7 @@ header .barras .dos{
     width: 7rem;
     border-radius: 50%; 
     background: none;
-    /* border: 2px solid rgb(104, 224, 207); */
-    
+    border: 2px solid rgb(104, 224, 207);    
 }
 .acercaDe .descargarCV p{ 
     font-size: 2rem;   
