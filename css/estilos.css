@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
 
 *{
     margin: 0;
@@ -343,9 +343,75 @@ header .barras .dos{
     display: flex;
     flex-direction: column;
 }
+.especializacion .container{
+    padding: 0 5% 0 5%; 
+    height: 95vh;   
+   /*  border: 2px solid rgb(255, 255, 255); */
+}
+
+/* Sección 3 - Título Izquierda */
+
+.especializacion .tituloIzquierda h1{          
+    font-size: 4rem;
+    color: white;
+    font-weight: 800;
+}
+.especializacion .tituloIzquierda h3{      
+    font-size: 4rem;
+    padding-bottom: 5%;
+    font-size: 2.3rem;
+    color: #68E9CF;
+    font-weight: 600; 
+}
+
+/* Sección 3 - Contenido */
+
 .especializacion .especializacionContenido{
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid rgb(255, 255, 255); 
 }
+.especializacion .especializacionContenido .especializacionContenidoBis{ 
+    display: flex;
+    color: white;
+    height: 60vh;
+    width: 28%;
+    /* border: 2px solid rgb(255, 255, 255); */
+}
+.especializacion .especializacionContenido .especializacionContenidoBis .dos{ 
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgb(255, 255, 255);
+}
+.especializacion .especializacionContenido .especializacionContenidoBis .uno span{
+    margin-top: 15%;
+    width: 100%;   
+    font-size: 4rem;
+    height: 0.2rem;
+    
+    /* border: 5px solid rgb(255, 255, 255); */
+}
+
+.especializacion .especializacionContenido .dos h1{
+    margin-bottom: 15%;   
+    font-size: 2.5rem;
+    font-weight: 800;
+    border: 2px solid rgb(255, 255, 255);
+} 
+.especializacion .especializacionContenido .dos p{  
+    margin: 0 4% 0 0;  
+    font-size: 1.5rem;    
+    border: 2px solid rgb(255, 255, 255);
+} 
+.especializacion .especializacionContenido .dos .numero{  
+    display: flex;
+    justify-content: flex-end; 
+    font-size: 10rem; 
+    -webkit-text-stroke: 2px white;
+    color: transparent;
+    border: 2px solid rgb(255, 255, 255);
+} 
 
 /* sección 3 - flechitas */
 .especializacion .flechitas{
