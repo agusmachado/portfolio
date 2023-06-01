@@ -29,7 +29,7 @@ header{
     align-items: center; 
     width: 100%;
     height: 20vh;  
-    z-index: 1;  
+    z-index: 5;  
     /* border: 2px solid white; */
 }
 header h1{
@@ -194,6 +194,25 @@ header .barras .dos{
     font-size: 2rem;
 } 
 
+/* sección 1 - líneas verticales */
+.hero .lineaIzquierda{
+    border-left: 0.12rem solid white;
+    height: 100vh;
+    position: absolute;
+    left: 7.3%;
+    margin-left: -4;
+    opacity: 0.3;
+}
+.hero .lineaDerecha{
+    border-left: 0.12rem solid white;
+    height: 100vh;
+    position: absolute;
+    right: 8.4%;
+    margin-left: -4;
+    opacity: 0.3;
+}
+
+
 
 /* SECCIÓN 2 - ACERCA DE */
 .acercaDe{
@@ -337,15 +356,35 @@ header .barras .dos{
     font-size: 2rem;            
 }
 
+/* sección 2 - líneas verticales */
+.acercaDe .lineaIzquierda{
+    border-left: 0.12rem solid white;
+    height: 100vh;
+    position: absolute;
+    left: 7.3%;
+    margin-left: -4;
+    opacity: 0.3;
+}
+.acercaDe .lineaDerecha{
+    border-left: 0.12rem solid white;
+    height: 100vh;
+    position: absolute;
+    right: 8.4%;
+    margin-left: -4;
+    opacity: 0.3;
+}
+
+
+
 /* SECCIÓN 3 - ESPECIALIZACIÓN */
 .especializacion{
-    background-color: cadetblue;
+    background-color: rgb(26, 26, 26);
     display: flex;
     flex-direction: column;
 }
 .especializacion .container{
-    padding: 0 5% 0 5%; 
-    height: 95vh;   
+    padding: 0 7.2% 0 7.2%; 
+    height: 100vh;   
    /*  border: 2px solid rgb(255, 255, 255); */
 }
 
@@ -370,39 +409,37 @@ header .barras .dos{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: 2px solid rgb(255, 255, 255); 
+   /*  border: 2px solid rgb(255, 255, 255); */ 
 }
 .especializacion .especializacionContenido .especializacionContenidoBis{ 
     display: flex;
     color: white;
-    height: 60vh;
+    height: 50vh;
     width: 28%;
     /* border: 2px solid rgb(255, 255, 255); */
 }
 .especializacion .especializacionContenido .especializacionContenidoBis .dos{ 
     display: flex;
     flex-direction: column;
-    border: 2px solid rgb(255, 255, 255);
+    /* border: 2px solid rgb(255, 255, 255); */
 }
 .especializacion .especializacionContenido .especializacionContenidoBis .uno span{
     margin-top: 15%;
     width: 100%;   
     font-size: 4rem;
     height: 0.2rem;
-    
     /* border: 5px solid rgb(255, 255, 255); */
 }
-
 .especializacion .especializacionContenido .dos h1{
     margin-bottom: 15%;   
     font-size: 2.5rem;
     font-weight: 800;
-    border: 2px solid rgb(255, 255, 255);
+    /* border: 2px solid rgb(255, 255, 255); */
 } 
 .especializacion .especializacionContenido .dos p{  
     margin: 0 4% 0 0;  
     font-size: 1.5rem;    
-    border: 2px solid rgb(255, 255, 255);
+   /*  border: 2px solid rgb(255, 255, 255); */
 } 
 .especializacion .especializacionContenido .dos .numero{  
     display: flex;
@@ -410,15 +447,80 @@ header .barras .dos{
     font-size: 10rem; 
     -webkit-text-stroke: 2px white;
     color: transparent;
-    border: 2px solid rgb(255, 255, 255);
+    /* border: 2px solid rgb(255, 255, 255); */
 } 
 
 /* sección 3 - flechitas */
-.especializacion .flechitas{
+.especializacion .flechitas{   
+    margin-left: 65%;
+    height: 15vh;
     display: flex;
     justify-content: flex-end;
+    align-items: center;    
+    /* border: 2px solid rgb(255, 255, 255);  */
+}
+.especializacion .flechitas div{
+    margin: 0 5% 0 5%;
+    /* height: 5rem;
+    width: 5rem;
+    border-radius: 50%; */    
+}
+.especializacion .flechitas .flechitaUno{
+    position: absolute;    
+    right: 9%;    
+    background-color: #68E093;  
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    opacity: 0.5;   
+}
+.especializacion .flechitas .spanUno{
+    display: flex;
+    position: absolute;
+    left: 86%; 
+    /* border: 2px solid rgb(255, 255, 255); */      
+}
+.especializacion .flechitas .flechitaDos{
+    position: absolute;
+    left: 82.5%;
+    background-color: #68E9CF;  
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;   
+}
+.especializacion .flechitas .spanDos{
+    display: flex;
+    position: absolute;
+    right: 12.5%; 
+    opacity: 0.5;   
+    rotate: 180deg; 
+    /* border: 2px solid rgb(255, 255, 255); */
+    
+}
+.especializacion .flechitas span{
+    color: white;
+    font-size: 1rem;
+    transform: scale(6, 4);
+    z-index: 2;
 }
 
+/* sección 3 - líneas verticales */
+.especializacion .lineaIzquierda{
+    border-left: 0.12rem solid white;
+    height: 100vh;
+    position: absolute;
+    left: 7.3%;
+    margin-left: -4;
+    opacity: 0.3;
+}
+.especializacion .lineaDerecha{
+    border-left: 0.12rem solid white;
+    height: 100vh;
+    position: absolute;
+    right: 8.4%;
+    margin-left: -4;
+    opacity: 0.3;
+}
 
 
 /* SECCIÓN 4 - EXPERIENCIA */
