@@ -12,6 +12,24 @@ a{
     color: black;
 }
 
+/* BODY - líneas verticales */
+body .lineaIzquierda{
+    border-left: 0.12rem solid white;
+    height: 500vh;
+    position: absolute;
+    left: 7.3%;
+    margin-left: -4;
+    opacity: 0.3;   
+}
+body .lineaDerecha{
+    border-left: 0.12rem solid white;
+    height: 500vh;
+    position: absolute;
+    right: 8.4%;
+    margin-left: -4;
+    opacity: 0.3;
+}
+
 /* TITULO IZQUIERDA */
 
 
@@ -70,12 +88,12 @@ header nav a:hover::after{
 
 header .barras{
     height: 6vh;
-    width: 8%;
-    /* border: 2px solid white; */
+    width: 8%;   
     display: flex;    
     justify-content: center;
     align-items: center; 
-    flex-direction: column;      
+    flex-direction: column;  
+    /* border: 2px solid white; */    
 }
 header .barras div{    
     padding: 4% 2% 4% 2%;
@@ -91,12 +109,31 @@ header .barras .dos{
     background: white;    
 }
 
+/* sección 1 - líneas verticales */
+header .lineaIzquierda{
+    border-left: 0.12rem solid white;
+    height: 100vh;
+    position: absolute;
+    left: 7.3%;
+    margin-left: -4;
+    opacity: 0.3;
+}
+header .lineaDerecha{
+    border-left: 0.12rem solid white;
+    height: 100vh;
+    position: absolute;
+    right: 8.4%;
+    margin-left: -4;
+    opacity: 0.3;
+}
+
+
 
 
 /* SECCIÓN 1 - HERO */
 .hero{
     width: 100%;
-    height: 100vh;
+    height: 150vh;
     background-image: linear-gradient(360deg,
     rgba(27, 27, 27, 1) 3%,
     rgba(26, 26, 26, .8) 30%,
@@ -107,8 +144,8 @@ header .barras .dos{
     content: "";
     position: absolute;
     z-index: -1;
-    width: 100%;
-    height: 100vh;
+    width: 120%;
+    height: 150vh;
     background-image: url(../img/05.jpg);    
     background-repeat: no-repeat;
     background-size: cover;
@@ -117,16 +154,22 @@ header .barras .dos{
 .hero .heroGeneral{ 
     padding: 12% 2% 0 2%;
     display: flex; 
-    justify-content: space-between;     
+    justify-content: space-between; 
+    /* border: 2px solid white;  */   
 }
 .hero .heroGeneral .contenidoHero{
-    margin-left: 5%;
+    margin-left: 5.5%;
     display: flex;      
     flex-direction: column;
     justify-content: center;
     align-items: center;   
     /* border: 4px solid paleturquoise; */
 }
+.hero .heroGeneral .contenidoHero .contenidoHeroDos{
+   height: 55vh;  
+   /* border: 4px solid paleturquoise; */
+}
+
 .hero .tituloIzquierda{
     padding-bottom: 5%;     
 }
@@ -134,7 +177,7 @@ header .barras .dos{
     display: flex;        
 }
 .hero .contenidoHero .tituloIzquierda h1{    
-    font-size: 4.5rem;
+    font-size: 6rem;
     color: white;
     font-weight: 800;
 }
@@ -144,12 +187,12 @@ header .barras .dos{
 }
 .hero .contenidoHero h2{
     padding-bottom: 5%;
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     color: white;
     font-weight: 600; 
 }
 .hero .contenidoHero p{
-    font-size: 1.5rem;
+    font-size: 2.2rem;
     color: #C3C3C3; 
     width: 80%; 
     padding-bottom: 5%;    
@@ -159,11 +202,11 @@ header .barras .dos{
     justify-content: flex-end;
     width: 80%;
     background-size: 68vh; 
-    margin-right: 2%;
-   /*  border: 2px solid chartreuse; */
+    margin-right: 4%;
+    /* border: 2px solid chartreuse; */
 } 
 .hero .imgHero img{
-    height: 75vh;
+    height: 85vh;
     z-index: -1;
 }
 
@@ -193,24 +236,6 @@ header .barras .dos{
 .hero .contenidoHeroDos i{
     font-size: 2rem;
 } 
-
-/* sección 1 - líneas verticales */
-.hero .lineaIzquierda{
-    border-left: 0.12rem solid white;
-    height: 100vh;
-    position: absolute;
-    left: 7.3%;
-    margin-left: -4;
-    opacity: 0.3;
-}
-.hero .lineaDerecha{
-    border-left: 0.12rem solid white;
-    height: 100vh;
-    position: absolute;
-    right: 8.4%;
-    margin-left: -4;
-    opacity: 0.3;
-}
 
 
 
@@ -356,25 +381,6 @@ header .barras .dos{
     font-size: 2rem;            
 }
 
-/* sección 2 - líneas verticales */
-.acercaDe .lineaIzquierda{
-    border-left: 0.12rem solid white;
-    height: 100vh;
-    position: absolute;
-    left: 7.3%;
-    margin-left: -4;
-    opacity: 0.3;
-}
-.acercaDe .lineaDerecha{
-    border-left: 0.12rem solid white;
-    height: 100vh;
-    position: absolute;
-    right: 8.4%;
-    margin-left: -4;
-    opacity: 0.3;
-}
-
-
 
 /* SECCIÓN 3 - ESPECIALIZACIÓN */
 .especializacion{
@@ -502,24 +508,6 @@ header .barras .dos{
     font-size: 1rem;
     transform: scale(6, 4);
     z-index: 2;
-}
-
-/* sección 3 - líneas verticales */
-.especializacion .lineaIzquierda{
-    border-left: 0.12rem solid white;
-    height: 100vh;
-    position: absolute;
-    left: 7.3%;
-    margin-left: -4;
-    opacity: 0.3;
-}
-.especializacion .lineaDerecha{
-    border-left: 0.12rem solid white;
-    height: 100vh;
-    position: absolute;
-    right: 8.4%;
-    margin-left: -4;
-    opacity: 0.3;
 }
 
 
