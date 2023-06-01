@@ -240,32 +240,34 @@ header .lineaDerecha{
 
 
 /* SECCIÓN 2 - ACERCA DE */
+
 .acercaDe{
-    padding: 0 2% 0 2%;    
+    padding: 0 2.5% 0 2.5%;    
     display: flex;
     flex-direction: column;
+    height: 100vh;
     background-color: rgb(26, 26, 26);
     /* border: 2px solid rgb(255, 255, 255); */  
 }
 .acercaDe .container{
-    padding: 0 5% 0 5%; 
-    height: 95vh;   
-   /*  border: 2px solid rgb(255, 255, 255); */
+    padding: 0 4.8% 0 4.8%; 
+    height: 100vh;   
+    /* border: 2px solid rgb(255, 255, 255); */
 }
 
 /* sección 2 - Título Izquierda */
 
 .acercaDe .tituloIzquierda h1{          
-    font-size: 4rem;
+    font-size: 5rem;
     color: white;
     font-weight: 800;
 }
 .acercaDe .tituloIzquierda h3{      
-    font-size: 4rem;
-    padding-bottom: 5%;
-    font-size: 2.3rem;
+    font-size: 2.6rem;
+    padding-bottom: 5%;    
     color: #68E9CF;
     font-weight: 600; 
+    /* border: 2px solid rgb(255, 255, 255); */
 }
 
 /* sección 2 - contenido */
@@ -274,18 +276,19 @@ header .lineaDerecha{
     justify-content: space-evenly;
     align-items: center;  
     height: 55vh;  
-    /* border: 2px solid rgb(255, 255, 255);  */  
+    /* border: 2px solid rgb(255, 255, 255); */ 
 }
 .acercaDe .acercaDeContenido .acercaDeContenidoLorem{
     width: 100%;
     font-size: 2.2rem;
     margin-right: 10%;
+    margin-bottom: 5.7%;
     color: #ECECEC;    
-   /*  border: 2px solid rgb(255, 255, 255); */   
+    /* border: 2px solid rgb(255, 255, 255);  */   
 }
 .acercaDe .acercaDeContenido .acercaDeContenidoDataUno{
     width: 100%;    
-    /* border: 2px solid rgb(255, 255, 255);  */  
+    /* border: 2px solid rgb(255, 255, 255); */  
 }
 .acercaDe  .acercaDeContenidoData{
     display: flex;
@@ -298,9 +301,6 @@ header .lineaDerecha{
     display: flex;
     justify-content: space-around;    
 }
-.acercaDe .acercaDeContenidoData div{
-    /* border: 2px solid rgb(255, 255, 255); */
-}
 .acercaDe .acercaDeContenidoDataUno .uno{
     margin-bottom: 20%;
 }
@@ -310,23 +310,21 @@ header .lineaDerecha{
 }
 .acercaDe .acercaDeContenidoDataUno h3{
     color: rgb(104, 224, 207);
-    font-size: 2rem;    
+    font-size: 2.2rem;    
 }
 .acercaDe .acercaDeContenidoDataUnoBis{ 
     padding: 8% 0 8% 0;   
     display: flex;
     flex-direction: column;   
     width: 100%; 
+   /*  border: 2px solid rgb(255, 255, 255); */
 }
 .acercaDe .acercaDeContenidoDataDos{
-    padding: 8% 0 8% 0;
+    padding: 8% 0 8% 2%;
     display: flex; 
     flex-direction: column; 
     width: 100%;
-    /* border: 2px solid rgb(255, 255, 255);    */   
-}
-.acercaDe .acercaDeContenidoDataDos div{
-    /* border: 2px solid rgb(255, 255, 255);   */
+    /* border: 2px solid rgb(255, 255, 255);    */ 
 }
 
 /* sección 2 - contenido Redes */
@@ -382,29 +380,40 @@ header .lineaDerecha{
 }
 
 
+
+
+
+
 /* SECCIÓN 3 - ESPECIALIZACIÓN */
+
+
 .especializacion{
-    background-color: rgb(26, 26, 26);
+    padding: 0 2.5% 0 2.5%;
+    height: 110vh;
     display: flex;
     flex-direction: column;
+    background-color: rgb(26, 26, 26);
+    /* border: 2px solid rgb(255, 255, 255); */
 }
 .especializacion .container{
-    padding: 0 7.2% 0 7.2%; 
+    padding: 10% 4.8% 0 4.8%;      
     height: 100vh;   
-   /*  border: 2px solid rgb(255, 255, 255); */
+    /* border: 2px solid rgb(255, 255, 255);  */
 }
 
 /* Sección 3 - Título Izquierda */
+.especializacion .tituloIzquierda{
+    padding-bottom: 1%;
+}
 
 .especializacion .tituloIzquierda h1{          
-    font-size: 4rem;
+    font-size: 5rem;
     color: white;
     font-weight: 800;
 }
 .especializacion .tituloIzquierda h3{      
-    font-size: 4rem;
-    padding-bottom: 5%;
-    font-size: 2.3rem;
+    font-size: 2.6rem;
+    padding-bottom: 5%;    
     color: #68E9CF;
     font-weight: 600; 
 }
@@ -419,18 +428,41 @@ header .lineaDerecha{
 }
 .especializacion .especializacionContenido .especializacionContenidoBis{ 
     display: flex;
+    color: white;   
+    height: 50vh;
+    width: 30%;
+    /* border: 2px solid rgb(255, 255, 255); */
+}
+.especializacion .especializacionContenido .especializacionContenidoBisBeta{     
+    display: flex;
     color: white;
     height: 50vh;
-    width: 28%;
+    width: 30%;
+    background: linear-gradient(to right, #68E093, #68E9CF);    
+    /* border: 2px solid rgb(255, 255, 255); */
+}
+.especializacion .especializacionContenido .especializacionContenidoBisBeta .uno span{
+    margin-top: 55%;
+    width: 100%;   
+    font-size: 4rem;
+    height: 0.2rem;
+    /* border: 5px solid rgb(255, 255, 255); */
+}
+.especializacion .especializacionContenido .especializacionContenidoBisBeta .dos{ 
+    padding-top: 5%;
+    padding-right: 8%;
+    display: flex;
+    flex-direction: column;
     /* border: 2px solid rgb(255, 255, 255); */
 }
 .especializacion .especializacionContenido .especializacionContenidoBis .dos{ 
+    padding-top: 5%;
     display: flex;
     flex-direction: column;
     /* border: 2px solid rgb(255, 255, 255); */
 }
 .especializacion .especializacionContenido .especializacionContenidoBis .uno span{
-    margin-top: 15%;
+    margin-top: 55%;
     width: 100%;   
     font-size: 4rem;
     height: 0.2rem;
@@ -457,23 +489,21 @@ header .lineaDerecha{
 } 
 
 /* sección 3 - flechitas */
-.especializacion .flechitas{   
-    margin-left: 65%;
+.especializacion .flechitas{  
+    padding-left: 84%;
     height: 15vh;
     display: flex;
-    justify-content: flex-end;
+    width: 15%;    
     align-items: center;    
-    /* border: 2px solid rgb(255, 255, 255);  */
+    /* border: 2px solid rgb(255, 255, 255); */
 }
 .especializacion .flechitas div{
     margin: 0 5% 0 5%;
-    /* height: 5rem;
-    width: 5rem;
-    border-radius: 50%; */    
+      
 }
-.especializacion .flechitas .flechitaUno{
-    position: absolute;    
-    right: 9%;    
+.especializacion .flechitas .flechitaUno{    
+    position: relative;
+    left: 4%;
     background-color: #68E093;  
     height: 5rem;
     width: 5rem;
@@ -483,12 +513,10 @@ header .lineaDerecha{
 .especializacion .flechitas .spanUno{
     display: flex;
     position: absolute;
-    left: 86%; 
+    left: 84%; 
     /* border: 2px solid rgb(255, 255, 255); */      
 }
-.especializacion .flechitas .flechitaDos{
-    position: absolute;
-    left: 82.5%;
+.especializacion .flechitas .flechitaDos{   
     background-color: #68E9CF;  
     height: 5rem;
     width: 5rem;
@@ -497,7 +525,7 @@ header .lineaDerecha{
 .especializacion .flechitas .spanDos{
     display: flex;
     position: absolute;
-    right: 12.5%; 
+    right: 14%; 
     opacity: 0.5;   
     rotate: 180deg; 
     /* border: 2px solid rgb(255, 255, 255); */
@@ -511,19 +539,47 @@ header .lineaDerecha{
 }
 
 
+
+
+
 /* SECCIÓN 4 - EXPERIENCIA */
-.experiencia{
-    background-color: coral;
+.experiencia{    
     display: flex;
     flex-direction: column;
+    height: 100vh;
+    background-color: coral;
+    border: 2px solid rgb(255, 255, 255);
 }
+.experiencia .container{
+    margin: 17% 8.2% 2% 7%;
+    height: 90vh;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+/* Sección 4 - Título Derecha */
+
 .experiencia .tituloDerecha{
     display: flex; 
     justify-content: flex-end;    
 }
-.experiencia .tituloDerecha div{ 
-    flex-direction: column;
+.experiencia .tituloDerecha h1{          
+    font-size: 5rem;
+    color: white;
+    font-weight: 800;
 }
+.experiencia .tituloDerecha h3{      
+    font-size: 2.6rem;
+    padding-bottom: 5%;    
+    color: #68E9CF;
+    font-weight: 600; 
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+
+
 .experiencia .experienciaDatos{
     display: flex;
     justify-content: center;
