@@ -15,7 +15,7 @@ a{
 /* BODY - LÍNEAS VERTICALES */
 body .lineaIzquierda{
     border-left: 0.12rem solid white;
-    height: 800vh;
+    height: 1000vh;
     position: absolute;
     left: 7.3%;
     margin-left: -4;
@@ -24,7 +24,7 @@ body .lineaIzquierda{
 }
 body .lineaDerecha{
     border-left: 0.12rem solid white;
-    height: 800vh;
+    height: 1000vh;
     position: absolute;
     right: 8.4%;
     margin-left: -4;
@@ -228,7 +228,6 @@ header .barras .dos{
     padding: 15% 2.5% 7% 2.5%;    
     display: flex;
     flex-direction: column;
-    height: 50vh;
     background-color: rgb(27, 27, 27);
    /*  border: 2px solid rgb(202, 37, 37);  */
 }
@@ -371,8 +370,7 @@ header .barras .dos{
 
 
 .especializacion{
-    padding: 15% 2.5% 0 2.5%;
-    height: 110vh;
+    padding: 15% 2.5% 0 2.5%;   
     display: flex;
     flex-direction: column;
     background-color: rgb(26, 26, 26);
@@ -388,7 +386,6 @@ header .barras .dos{
 .especializacion .tituloIzquierda{
     padding-bottom: 1%;
 }
-
 .especializacion .tituloIzquierda h1{          
     font-size: 5rem;
     color: white;
@@ -481,8 +478,7 @@ header .barras .dos{
     /* border: 2px solid rgb(255, 255, 255); */
 }
 .especializacion .flechitas div{
-    margin: 0 5% 0 5%;
-      
+    margin: 0 5% 0 5%;      
 }
 .especializacion .flechitas .flechitaUno{    
     position: relative;
@@ -511,8 +507,7 @@ header .barras .dos{
     right: 14%; 
     opacity: 0.5;   
     rotate: 180deg; 
-    /* border: 2px solid rgb(255, 255, 255); */
-    
+    /* border: 2px solid rgb(255, 255, 255); */    
 }
 .especializacion .flechitas span{
     color: white;
@@ -528,8 +523,7 @@ header .barras .dos{
 /* SECCIÓN 4 - EXPERIENCIA */
 .experiencia{    
     display: flex;
-    flex-direction: column;
-    height: 200vh;
+    flex-direction: column;    
     background-color: rgb(27, 27, 27);
    /*  border: 2px solid rgb(255, 255, 255); */
 }
@@ -629,16 +623,15 @@ header .barras .dos{
 
 /* SECCIÓN 5 - HABILIDADES */
 .habilidades{
-    padding: 10% 2.5% 0 2.5%;
-    height: 140vh;    
-    background-color: rgb(26, 26, 26);
+    padding: 10% 2.5% 0 2.5%; 
+    background-color: black;
     /* background-color: rgb(211, 92, 92);
     border: 2px solid rgb(255, 255, 255); */
 }
 .habilidades .container{
     padding: 10% 6% 0 4.8%;      
     height: 100vh;   
-    /* border: 2px solid rgb(255, 255, 255); */
+    /* border: 2px solid rgb(255, 255, 255);  */
 }
 .habilidades .habilidadesTotales{    
     display: flex;
@@ -649,7 +642,6 @@ header .barras .dos{
 .habilidades .tituloIzquierda{
     padding-bottom: 1%;
 }
-
 .habilidades .tituloIzquierda h1{          
     font-size: 5rem;
     color: white;
@@ -680,7 +672,6 @@ header .barras .dos{
 }
 .habilidades .container .habilidadesTotales .data h1{
     font-size: 2.5rem;
-
     /* border: 2px solid rgb(255, 255, 255); */
 }
 .habilidades .container .habilidadesTotales .data h2{
@@ -757,30 +748,113 @@ header .barras .dos{
 
 
 
+
+
 /* SECCIÓN 6 - PORTFOLIO */
-.portfolio{
-    background-color: cornflowerblue;
+.portfolio{    
+    background-color: rgb(27, 27, 27);
 }
-.portfolio .portfolioMuestra{
-    display: flex;
-    justify-content: space-around;    
-}
-.portfolio .portfolioMuestra .portfolioMuestraUno{
-    height: 35vh;
-    width: 40%;
-    background-color: pink;    
-}
-.portfolio .portfolioMuestra .portfolioMuestraDos{
-    height: 35vh;
-    width: 40%;
-    background-color: rgb(57, 134, 223);    
+.portfolio .container{
+    padding: 10% 8.4% 0 7.3%;      
+    height: 100vh;   
+    /* border: 2px solid rgb(255, 255, 255); */
 }
 
-/* sección 6 - flechitas */
-.portfolio .flechitas{
+/* Sección 6 - Título Derecha */
+
+.portfolio .tituloDerecha{
+    display: flex; 
+    justify-content: flex-end;    
+}
+.portfolio .tituloDerecha h1{          
+    font-size: 5rem;
+    color: white;
+    font-weight: 800;
+}
+.portfolio .tituloDerecha h3{      
+    font-size: 2.6rem;
+    padding-bottom: 20%;    
+    color: #68E9CF;
+    font-weight: 600; 
     display: flex;
     justify-content: flex-end;
 }
+
+/* Sección 6 - Muestras de trabajos */
+.portfolio .portfolioMuestra{
+    display: flex;
+    justify-content: space-between;    
+}
+.portfolio .portfolioMuestra img{
+    box-shadow: 0rem .5rem 1rem rgb(163, 162, 162);
+    height: 35vh;
+}
+.portfolio .portfolioMuestra .portfolioMuestraUno{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 48.5%;
+    background-color: rgb(220, 223, 230);    
+}
+.portfolio .portfolioMuestra .portfolioMuestraDos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 48.5%;
+    background-color: rgb(245, 236, 219);    
+}
+
+/* sección 6 - flechitas */
+.portfolio .flechitas{  
+    padding-left: 85%;
+    height: 15vh;
+    display: flex;
+    width: 15%;    
+    align-items: center;    
+    /* border: 2px solid rgb(255, 255, 255); */
+}
+.portfolio .flechitas div{
+    margin: 0 5% 0 5%;      
+}
+.portfolio .flechitas .flechitaUno{    
+    position: relative;
+    left: 4%;
+    background-color: #68E093;  
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    opacity: 0.5;   
+}
+.portfolio .flechitas .spanUno{
+    display: flex;
+    position: absolute;
+    left: 84%; 
+    /* border: 2px solid rgb(255, 255, 255); */      
+}
+.portfolio .flechitas .flechitaDos{   
+    background-color: #68E9CF;  
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;   
+}
+.portfolio .flechitas .spanDos{
+    display: flex;
+    position: absolute;
+    right: 14%; 
+    opacity: 0.5;   
+    rotate: 180deg; 
+    /* border: 2px solid rgb(255, 255, 255); */    
+}
+.portfolio .flechitas span{
+    color: white;
+    font-size: 1rem;
+    transform: scale(6, 4);
+    z-index: 2;
+}
+
+
 
 
 /* SECCIÓN 7 - CONTACTO */
