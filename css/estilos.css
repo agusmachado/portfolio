@@ -624,7 +624,11 @@ header .barras .dos{
 /* SECCIÓN 5 - HABILIDADES */
 .habilidades{
     padding: 10% 2.5% 0 2.5%; 
-    background-color: black;
+    background: linear-gradient(to bottom,
+    rgba(17, 14, 14, 1) 3%,
+    rgba(17, 14, 14, 1) 66.5%,
+    rgba(27, 27, 27, 1) 66.5%,
+    rgba(27, 27, 27, 1) 100%);
     /* background-color: rgb(211, 92, 92);
     border: 2px solid rgb(255, 255, 255); */
 }
@@ -641,13 +645,18 @@ header .barras .dos{
 /* Sección 5 - Título Izquierda */
 .habilidades .tituloIzquierda{
     padding-bottom: 1%;
+    width: 73%;
+    /* border: 2px solid rgb(255, 255, 255); */
 }
 .habilidades .tituloIzquierda h1{          
     font-size: 5rem;
     color: white;
     font-weight: 800;
+    /* border: 2px solid rgb(255, 255, 255); */
 }
-.habilidades .tituloIzquierda h3{      
+.habilidades .tituloIzquierda h3{ 
+    display: flex;
+    justify-content: flex-end;       
     font-size: 2.6rem;
     padding-bottom: 5%;    
     color: #68E9CF;
@@ -861,7 +870,93 @@ header .barras .dos{
 .contacto{
     background-color: darkcyan;
 }
+.contacto .container{
+    padding: 10% 8.4% 0 7.3%;      
+    height: 120vh;   
+    border: 2px solid rgb(255, 255, 255);
+}
 .contacto .contenidoMapa{
     display: flex;
+    justify-content: space-between;    
+}
+
+/* Sección 7 - Título Izquierda */
+.contacto .tituloIzquierda{
+    padding-bottom: 10%;
+    width: 48%;
+    border: 2px solid rgb(255, 255, 255);
+}
+.contacto .tituloIzquierda h1{          
+    font-size: 5rem;
+    color: white;
+    font-weight: 800;
+}
+.contacto .tituloIzquierda h3{
+    display: flex;
+    justify-content: flex-end;      
+    font-size: 2.6rem;
+    padding-bottom: 4%;    
+    color: #68E9CF;
+    font-weight: 600; 
+}
+
+/* Sección 7 - inputs */
+.contacto .container .contenidoMapa .inputs{    
+    height: 75vh;
+    width: 48.5%;     
+    border: 2px solid rgb(255, 255, 255);   
+}
+.contacto .container .contenidoMapa .inputs h3{   
+    font-size: 1.5rem; 
+    line-height: 2;      
+}
+.contacto .container .contenidoMapa .inputs input{ 
+    margin-bottom: 2%;   
+    height: 5vh;
+    width: 100%; 
+    background: none;
+    border: 2px solid rgb(255, 255, 255);   
+}
+.contacto .container .contenidoMapa .inputs .mensaje{ 
+    height: 30vh;       
+}
+.contacto .container .contenidoMapa .inputs .enviarMensaje{ 
+    display: flex;
+    align-items: center;
+    padding-top: 4%;     
+    /* border: 2px solid rgb(255, 255, 255);  */         
+}
+.contacto .container .contenidoMapa .inputs .enviarMensaje button{ 
+    display: flex; 
     justify-content: center;
+    align-items: center;   
+    height: 10vh; 
+    width: 50%;  
+    background-color: #68E9CF;
+    border: none;       
+}
+.contacto .container .contenidoMapa .inputs .enviarMensaje button h3{     
+    font-size: 1.8rem;
+    color: white;         
+}
+.contacto .container .contenidoMapa .inputs .enviarMensaje button span{     
+    font-size: 3.5rem;    
+    color: white;     
+}
+
+/* Sección 7 - Mapa */
+.contacto .container .contenidoMapa .mapa { 
+    margin-top: 1%;
+    display: flex;
+    justify-content: flex-end;
+    height: 90vh;   
+    width: 48.5%;
+    border: 2px solid rgb(255, 255, 255);
+}
+.contacto .container .contenidoMapa .mapa img{  
+    -webkit-clip-path: inset(0% 0 25% 0);
+    clip-path: inset(0% 0% 25% 0);  
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);  
+    height: 82vh;
 }
