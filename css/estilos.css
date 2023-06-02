@@ -529,13 +529,13 @@ header .barras .dos{
 .experiencia{    
     display: flex;
     flex-direction: column;
-    height: 190vh;
+    height: 200vh;
     background-color: rgb(27, 27, 27);
    /*  border: 2px solid rgb(255, 255, 255); */
 }
 .experiencia .container{
-    margin: 17% 8.2% 0 7%;
-    height: 170vh;
+    margin: 17% 8.4% 0 7.3%;
+    height: 180vh;
     /* border: 2px solid rgb(0, 0, 0); */
 }
 
@@ -552,12 +552,13 @@ header .barras .dos{
 }
 .experiencia .tituloDerecha h3{      
     font-size: 2.6rem;
-    padding-bottom: 15%;    
+    padding-bottom: 20%;    
     color: #68E9CF;
     font-weight: 600; 
     display: flex;
     justify-content: flex-end;
 }
+
 
 /* Sección 4 - Rectángulos */
 
@@ -573,7 +574,7 @@ header .barras .dos{
     /* border: 2px solid rgb(255, 6, 6); */
 }
 .experiencia .experienciaDatos .experienciaDatosUno .datosUnoBis{  
-    margin: 3% 3% 3% 0;
+    margin: 3% 3% 10% 0;
     height: 55vh;
     border: 2px solid rgb(0, 0, 0);
 }
@@ -589,7 +590,7 @@ header .barras .dos{
     /* border: 2px solid rgb(248, 31, 31); */
 }
 .experiencia .experienciaDatos .experienciaDatosDos .datosDosBis{ 
-    margin: 3% 0 3% 3%;
+    margin: 3% 0 10% 3%;
     height: 55vh;
     border: 2px solid transparent; 
 }
@@ -614,7 +615,7 @@ header .barras .dos{
     font-size: 1.5rem; 
     /* border: 2px solid rgb(0, 0, 0); */
 }
-.experiencia .experienciaDatos .color{ 
+.experiencia .experienciaDatos .color{     
     color: white;
     background: linear-gradient(to right, #68E093, #68E9CF);     
 }
@@ -628,18 +629,131 @@ header .barras .dos{
 
 /* SECCIÓN 5 - HABILIDADES */
 .habilidades{
-    background-color: cyan;
+    padding: 10% 2.5% 0 2.5%;
+    height: 140vh;    
+    background-color: rgb(26, 26, 26);
+    /* background-color: rgb(211, 92, 92);
+    border: 2px solid rgb(255, 255, 255); */
 }
-.habilidades .habilidadesTotales{
+.habilidades .container{
+    padding: 10% 6% 0 4.8%;      
+    height: 100vh;   
+    /* border: 2px solid rgb(255, 255, 255); */
+}
+.habilidades .habilidadesTotales{    
     display: flex;
     justify-content: center;
 }
 
-/* sección 5 - botón CV */
-.habilidades .descargarCV{
-    display: flex;
-    justify-content: flex-end;
+/* Sección 5 - Título Izquierda */
+.habilidades .tituloIzquierda{
+    padding-bottom: 1%;
 }
+
+.habilidades .tituloIzquierda h1{          
+    font-size: 5rem;
+    color: white;
+    font-weight: 800;
+}
+.habilidades .tituloIzquierda h3{      
+    font-size: 2.6rem;
+    padding-bottom: 5%;    
+    color: #68E9CF;
+    font-weight: 600; 
+}
+
+/* Sección 5 - Habilidades */
+.habilidades .container .habilidadesTotales{
+    height: 60vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid rgb(255, 255, 255); */
+}
+.habilidades .container .habilidadesTotales .data{
+    color: white;
+    padding-bottom: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid rgb(255, 255, 255); */
+}
+.habilidades .container .habilidadesTotales .data h1{
+    font-size: 2.5rem;
+
+    /* border: 2px solid rgb(255, 255, 255); */
+}
+.habilidades .container .habilidadesTotales .data h2{
+    font-size: 1.8rem;
+    /* border: 2px solid rgb(255, 255, 255); */
+}
+.habilidades .container .habilidadesTotales .barraBlanca{ 
+    margin-bottom: 2%;   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 2vh;
+    background-color: white;
+    /* border: 2px solid rgb(255, 255, 255); */
+}
+.habilidades .container .habilidadesTotales .habilidadesUno{
+    width: 49%;
+    /* border: 2px solid rgb(255, 255, 255); */
+}
+.habilidades .container .habilidadesTotales .habilidadesDos{
+    width: 49%;
+    /* border: 2px solid rgb(255, 255, 255); */
+}
+
+/* Sección 5 - Barras de grado de conocimiento */
+.habilidades .container .habilidadesTotales .barraHtml{  
+    width: 80%;
+    height: 2vh;
+    background: linear-gradient(to right, #68E9CF, #68E093);
+}
+.habilidades .container .habilidadesTotales .barraCss{  
+    width: 70%;
+    height: 2vh;
+    background: linear-gradient(to right, #68E9CF, #68E093);
+}
+.habilidades .container .habilidadesTotales .barraLaravel{  
+    width: 50%;
+    height: 2vh;
+    background: linear-gradient(to right, #68E9CF, #68E093);
+}
+.habilidades .container .habilidadesTotales .barraVueJs{  
+    width: 30%;
+    height: 2vh;
+    background: linear-gradient(to right, #68E9CF, #68E093);
+}
+
+/* Sección 5 - DescargarCV */
+.habilidades .descargarCV{
+    /* padding-top: 10%; */
+    margin-left: 79%;
+    width: 40%;
+    /* border: 2px solid rgb(255, 255, 255);  */
+}
+.habilidades .descargarCV div{ 
+    position: relative; 
+    left: 7%;
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%; 
+    background: none;
+    border: 2px solid rgb(104, 224, 207);
+}
+.habilidades .descargarCV p{
+    font-size: 2rem;   
+    color: white;
+    left: 17%;
+    position: relative;
+    top: -3.5rem;
+}
+.habilidades .contenidoHeroDos i{
+    font-size: 2rem;
+} 
 
 
 
