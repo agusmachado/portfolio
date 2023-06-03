@@ -13,6 +13,7 @@ a{
 }
 
 
+
 /* BODY - LÍNEAS VERTICALES */
 /* IZQUIERDA */
 body .lineaIzquierda{
@@ -176,7 +177,7 @@ header .barras .dos{
     z-index: -2;
 }
 .hero .heroGeneral .guion{   
-    top: 71%; 
+    top: 70%; 
     left: 0;
     width: 6.5rem;
     height: .5rem;
@@ -282,7 +283,8 @@ header .barras .dos{
 }
 .acercaDe .container{
     padding: 0 4.8% 0 5%; 
-    height: 100vh;   
+    height: 100vh;  
+    position: relative; 
    /*  border: 2px solid rgb(255, 255, 255); */
 }
 
@@ -290,8 +292,8 @@ header .barras .dos{
 
 .acercaDe .tituloIzquierda .circuloDos{ 
     position: absolute;  
-    top: 137%;
-    left: -2%; 
+    top: -10%;
+    left: -5%; 
     width: 22rem;
     height: 22rem;     
     border: .1rem solid #68E9CF;
@@ -442,7 +444,8 @@ header .barras .dos{
 }
 .especializacion .container{
     padding: 0 6% 0 4.8%;      
-    height: 100vh;   
+    height: 100vh; 
+    position: relative;  
     /* border: 2px solid rgb(255, 255, 255); */ 
 }
 
@@ -450,8 +453,8 @@ header .barras .dos{
 
 .especializacion .tituloIzquierda .circuloTres{ 
     position: absolute;  
-    top: 273%;
-    left: -2%; 
+    top: -12%;
+    left: -5%; 
     width: 22rem;
     height: 22rem;     
     border: .1rem solid #68E9CF;
@@ -549,7 +552,7 @@ header .barras .dos{
 
 /* sección 3 - flechitas */
 .especializacion .flechitas{  
-    padding-left: 84%;
+    padding-left: 85%;
     height: 15vh;
     display: flex;
     width: 15%;    
@@ -571,7 +574,7 @@ header .barras .dos{
 .especializacion .flechitas .spanUno{
     display: flex;
     position: absolute;
-    left: 84%; 
+    left: 86%; 
     /* border: 2px solid rgb(255, 255, 255); */      
 }
 .especializacion .flechitas .flechitaDos{   
@@ -583,7 +586,7 @@ header .barras .dos{
 .especializacion .flechitas .spanDos{
     display: flex;
     position: absolute;
-    right: 14%; 
+    right: 13%; 
     opacity: 0.5;   
     rotate: 180deg; 
     /* border: 2px solid rgb(255, 255, 255); */    
@@ -604,12 +607,42 @@ header .barras .dos{
     display: flex;
     flex-direction: column;    
     background-color: rgb(27, 27, 27);
-   /*  border: 2px solid rgb(255, 255, 255); */
+    /* border: 2px solid rgb(255, 255, 255); */
 }
+
 .experiencia .container{
     margin: 17% 8.4% 0 7.3%;
     height: 180vh;
-    /* border: 2px solid rgb(0, 0, 0); */
+    position: relative;
+    /* border: 2px solid rgb(255, 255, 255); */
+}
+
+/* Sección 4 - Círculo Derecha */
+.experiencia .circulo{    
+    position: absolute;
+    top: 3%;
+    left: -15%;
+    background-color: #68E9CF;  
+    height: 40rem;
+    width: 40rem;
+    border-radius: 50%;
+    opacity: 0.5;   
+}
+
+/* Sección 4 - Círculo Derecha */
+.experiencia .circuloSeis{ 
+        position: absolute;
+        top: -7%;
+        right: -9.5%;
+        width: 22rem;
+        height: 22rem;
+        background-color: transparent;
+        border: .1rem solid #68E9CF;
+        border-radius: 50%;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 5% 50%);
+        transform: rotate(180deg);
+        overflow: hidden;
+        z-index: 1;    
 }
 
 /* Sección 4 - Título Derecha */
@@ -618,10 +651,12 @@ header .barras .dos{
     display: flex; 
     justify-content: flex-end;    
 }
-.experiencia .tituloDerecha h1{          
+.experiencia .tituloDerecha h1{  
+    position: relative;        
     font-size: 5rem;
     color: white;
     font-weight: 800;
+    z-index: 2;
 }
 .experiencia .tituloDerecha h3{      
     font-size: 2.6rem;
@@ -715,6 +750,7 @@ header .barras .dos{
 .habilidades .container{
     padding: 10% 6% 0 4.8%;      
     height: 100vh;   
+    position: relative;
     /* border: 2px solid rgb(255, 255, 255); */ 
 }
 .habilidades .habilidadesTotales{    
@@ -857,8 +893,37 @@ header .barras .dos{
 }
 .portfolio .container{
     padding: 10% 8.4% 0 7.3%;      
-    height: 100vh;   
+    height: 100vh;
+    position: relative; 
+    z-index: 1;
     /* border: 2px solid rgb(255, 255, 255); */
+}
+
+/* Sección 6 - Círculo Derecha */
+.portfolio .circulo{    
+    position: absolute;
+    top: 15%;
+    left: -9%;
+    background-color: #68E9CF;  
+    height: 40rem;
+    width: 40rem;
+    border-radius: 50%;
+    opacity: 0.5;   
+}
+/* Sección 6 - Círculo Derecha */
+.portfolio .circuloSiete{ 
+    position: absolute;
+    top: 8%; 
+    right: 0%;
+    width: 22rem;
+    height: 22rem;
+    background-color: transparent;
+    border: .1rem solid #68E9CF;
+    border-radius: 50%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 35% 50%);
+    transform: rotate(180deg);
+    overflow: hidden;
+    z-index: -1; 
 }
 
 /* Sección 6 - Título Derecha */
@@ -871,6 +936,7 @@ header .barras .dos{
     font-size: 5rem;
     color: white;
     font-weight: 800;
+    z-index: 2; 
 }
 .portfolio .tituloDerecha h3{      
     font-size: 2.6rem;
@@ -896,7 +962,8 @@ header .barras .dos{
     align-items: center;
     height: 50vh;
     width: 48.5%;
-    background-color: rgb(220, 223, 230);    
+    background-color: rgb(220, 223, 230); 
+    z-index: 2;   
 }
 .portfolio .portfolioMuestra .portfolioMuestraDos{
     display: flex;
@@ -970,6 +1037,7 @@ header .barras .dos{
 .contacto .container{
     padding: 10% 8.4% 0 7.3%;      
     height: 136.5vh; 
+    position: relative;
     /* border: 2px solid rgb(255, 255, 255); */
 }
 .contacto .contenidoMapa{
@@ -987,7 +1055,7 @@ header .barras .dos{
 
 .contacto .tituloIzquierda .circuloCinco{ 
     position: absolute;  
-    top: 850%;
+    top: 4%;
     left: -2%; 
     width: 22rem;
     height: 22rem;     
