@@ -17,7 +17,7 @@ a{
 /* IZQUIERDA */
 body .lineaIzquierda{
     border-left: 0.12rem solid white;
-    height: 1000vh;
+    height: 1039.3vh;
     position: absolute;
     left: 7.3%;
     margin-left: -4;
@@ -26,7 +26,7 @@ body .lineaIzquierda{
 }
 body .lineaIzquierdaBis{
     border-left: 0.12rem solid white;
-    height: 1000vh;
+    height: 1039.3vh;
     position: absolute;
     left: 19.5%;
     margin-left: -4;
@@ -37,7 +37,7 @@ body .lineaIzquierdaBis{
 /* DERECHA */
 body .lineaDerecha{
     border-left: 0.12rem solid white;
-    height: 1000vh;
+    height: 1039.3vh;
     position: absolute;
     right: 8.4%;
     margin-left: -4;
@@ -46,7 +46,7 @@ body .lineaDerecha{
 }
 body .lineaDerechaBis{
     border-left: 0.12rem solid white;
-    height: 1000vh;
+    height: 1039.3vh;
     position: absolute;
     right: 22.5%;
     margin-left: -4;
@@ -278,7 +278,6 @@ header .barras .dos{
     flex-direction: column;
     background-color: rgb(27, 27, 27);
    /*  border: 2px solid rgb(202, 37, 37);  */
-   z-index: -3;
 }
 .acercaDe .container{
     padding: 0 4.8% 0 5%; 
@@ -286,27 +285,26 @@ header .barras .dos{
    /*  border: 2px solid rgb(255, 255, 255); */
 }
 
-/* Sección 2 - Circulo Izquierda */
-
-.acercaDe .tituloIzquierda .circuloDos{ 
-    position: absolute;  
-    top: 137%;
+/* Sección 2 - Circulo */
+.acercaDe .container .circulo{   
+    /* top: 50%; */
+    margin-bottom: 5%;
     left: -2%; 
-    width: 22rem;
-    height: 22rem;     
-    border: .1rem solid #68E9CF;
-    border-radius: 100%;
-    overflow: hidden;    
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;    
+    position: absolute;
+    overflow: hidden;
+    border: 1px solid #68E9CF;
+   /*  z-index: -2; */
 }
 
 /* sección 2 - Título Izquierda */
 
-.acercaDe .tituloIzquierda h1{  
-    position: relative;        
+.acercaDe .tituloIzquierda h1{          
     font-size: 5rem;
     color: white;
     font-weight: 800;
-    z-index: 2;    
 }
 .acercaDe .tituloIzquierda h3{      
     font-size: 2.6rem;
@@ -434,41 +432,26 @@ header .barras .dos{
 
 
 .especializacion{
-    padding: 10% 2.5% 0 2.5%;   
+    padding: 15% 2.5% 0 2.5%;   
     display: flex;
     flex-direction: column;
     background-color: rgb(26, 26, 26);
-    /* border: 2px solid rgb(255, 255, 255);  */
+    /* border: 2px solid rgb(255, 255, 255); */
 }
 .especializacion .container{
-    padding: 0 6% 0 4.8%;      
+    padding: 10% 4.8% 0 4.8%;      
     height: 100vh;   
-    /* border: 2px solid rgb(255, 255, 255); */ 
-}
-
-/* Sección 3 - Circulo Izquierda */
-
-.especializacion .tituloIzquierda .circuloTres{ 
-    position: absolute;  
-    top: 273%;
-    left: -2%; 
-    width: 22rem;
-    height: 22rem;     
-    border: .1rem solid #68E9CF;
-    border-radius: 100%;
-    overflow: hidden;    
+    /* border: 2px solid rgb(255, 255, 255);  */
 }
 
 /* Sección 3 - Título Izquierda */
 .especializacion .tituloIzquierda{
     padding-bottom: 1%;
 }
-.especializacion .tituloIzquierda h1{ 
-    position: relative;         
+.especializacion .tituloIzquierda h1{          
     font-size: 5rem;
     color: white;
     font-weight: 800;
-    z-index: 2;
 }
 .especializacion .tituloIzquierda h3{      
     font-size: 2.6rem;
@@ -481,7 +464,7 @@ header .barras .dos{
 
 .especializacion .especializacionContenido{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
    /*  border: 2px solid rgb(255, 255, 255); */ 
 }
@@ -490,7 +473,7 @@ header .barras .dos{
     color: white;   
     height: 50vh;
     width: 30%;
-    /* border: 2px solid rgb(255, 255, 255); */ 
+    /* border: 2px solid rgb(255, 255, 255); */
 }
 .especializacion .especializacionContenido .especializacionContenidoBisBeta{     
     display: flex;
@@ -702,40 +685,27 @@ header .barras .dos{
 
 /* SECCIÓN 5 - HABILIDADES */
 .habilidades{
-    padding: 2% 2.5% 0 2.5%; 
+    padding: 10% 2.5% 0 2.5%; 
     background: linear-gradient(to bottom,
     rgba(17, 14, 14, 1) 3%,
-    rgba(17, 14, 14, 1) 57%,
-    rgba(27, 27, 27, 1) 57%,
+    rgba(17, 14, 14, 1) 66.5%,
+    rgba(27, 27, 27, 1) 66.5%,
     rgba(27, 27, 27, 1) 100%);
     /* background-color: rgb(211, 92, 92);
-     */
-     /* border: 2px solid rgb(255, 255, 255); */
+    border: 2px solid rgb(255, 255, 255); */
 }
 .habilidades .container{
     padding: 10% 6% 0 4.8%;      
     height: 100vh;   
-    /* border: 2px solid rgb(255, 255, 255); */ 
+    /* border: 2px solid rgb(255, 255, 255);  */
 }
 .habilidades .habilidadesTotales{    
     display: flex;
     justify-content: center;
 }
-/* Sección 5 - Circulo Izquierda */
 
-.habilidades .tituloIzquierda .circuloCuatro{ 
-    position: absolute;  
-    top: -45%;
-    left: -13.5%; 
-    width: 22rem;
-    height: 22rem;     
-    border: .1rem solid #68E9CF;
-    border-radius: 100%;
-    overflow: hidden;    
-}
 /* Sección 5 - Título Izquierda */
 .habilidades .tituloIzquierda{
-    position: relative;
     padding-bottom: 5%;
     width: 73%;
     /* border: 2px solid rgb(255, 255, 255); */
@@ -969,7 +939,7 @@ header .barras .dos{
 }
 .contacto .container{
     padding: 10% 8.4% 0 7.3%;      
-    height: 136.5vh; 
+    height: 130vh; 
     /* border: 2px solid rgb(255, 255, 255); */
 }
 .contacto .contenidoMapa{
@@ -983,24 +953,10 @@ header .barras .dos{
     width: 48%;
     /* border: 2px solid rgb(255, 255, 255); */
 }
-/* Sección 5 - Circulo Izquierda */
-
-.contacto .tituloIzquierda .circuloCinco{ 
-    position: absolute;  
-    top: 850%;
-    left: -2%; 
-    width: 22rem;
-    height: 22rem;     
-    border: .1rem solid #68E9CF;
-    border-radius: 100%;
-    overflow: hidden;    
-}
-.contacto .tituloIzquierda h1{  
-    position: relative;        
+.contacto .tituloIzquierda h1{          
     font-size: 5rem;
     color: white;
     font-weight: 800;
-    z-index: 2;
 }
 .contacto .tituloIzquierda h3{
     display: flex;
