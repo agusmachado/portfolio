@@ -533,6 +533,9 @@ header .barras .dos{
     background: linear-gradient(to right, #68E093, #68E9CF);    
     /* border: 2px solid rgb(255, 255, 255); */
 }
+.especializacion .especializacionContenido .especializacionContenidoBisBeta01{     
+    display: none;
+}
 .especializacion .especializacionContenido .especializacionContenidoBisBeta .uno span{
     margin-top: 55%;
     width: 100%;   
@@ -954,7 +957,7 @@ header .barras .dos{
     height: 100vh;
     position: relative; 
     z-index: 1;
-    /* border: 2px solid rgb(255, 255, 255); */
+    /*  border: 2px solid rgb(255, 255, 255);  */
 }
 
 /* Sección 6 - Círculo Derecha */
@@ -1036,7 +1039,8 @@ header .barras .dos{
     align-items: center;
     height: 50vh;
     width: 48.5%;
-    background-color: rgb(245, 236, 219);    
+    background-color: rgb(245, 236, 219); 
+    z-index: 2;   
 }
 
 /* sección 6 - flechitas */
@@ -1220,4 +1224,228 @@ header .barras .dos{
     filter: grayscale(100%);  
     height: 82vh;
     /* cursor: pointer;  */
+}
+
+
+
+
+
+/* RESPONSIVE DESIGN */
+@media(max-width: 768px){
+    /* HEADER */
+    header{
+        display: flex;
+        justify-content: space-between;
+        height: 10vh;
+    }
+    header nav{    
+        display: none;
+    }
+    /* HERO */
+    .hero{
+        height: 100vh;
+        background-image:  linear-gradient(360deg,
+        rgba(27, 27, 27, 1) 3%,
+        rgba(26, 26, 26, .8) 30%,
+        rgba(25, 25, 25, .4) 45%,
+        rgba(25, 25, 25, 0) 100%), url(../img/05.jpg);        
+    }
+    .hero .circulo{
+        width: 25rem;
+        height: 25rem;        
+    }
+    .hero .contenidoHero .tituloIzquierda h1{    
+        font-size: 3rem;
+        color: white;
+        font-weight: 800;
+    }
+    .hero .descargarCV{
+        width: 60%; 
+    }
+    .hero .imgHero{    
+        display: none
+    }     
+    .hero .heroGeneral .guion{   
+        display: none;
+    }  
+
+    /* SECCION 2 - ACERCA DE MÍ */
+    .acercaDe{
+        padding: 0 2.5% 30% 2.5%;
+    }
+    .acercaDe .tituloIzquierda h1{ 
+        font-size: 2rem;
+    }
+    .acercaDe .container .tituloIzquierda h3{      
+        font-size: 2rem;        
+    }
+    .acercaDe .acercaDeContenido{    
+        display: flex;
+        flex-direction: column;          
+        height: 55vh;        
+    }
+    .acercaDe .acercaDeContenido .acercaDeContenidoLorem{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0;         
+    }
+    .acercaDe .tituloIzquierda h3{      
+        font-size: 2.6rem;
+        padding-bottom: 35%; 
+    }    
+    .acercaDe .descargarCV{
+        display: none;
+    }    
+
+    /* SECCION 3 - ESPECIALIZACIÓN */
+
+    .especializacion .tituloIzquierda h1{              
+        font-size: 2rem;       
+    }
+    .especializacion .tituloIzquierda h3{      
+        font-size: 2rem;                
+    }
+    .especializacion .container .especializacionContenido{
+        margin-top: 5%;       
+        display: flex;
+        justify-content: center;
+        align-items: center;          
+    }
+    .especializacion .container .especializacionContenido .especializacionContenidoBisBeta01{ 
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        height: 50vh;
+        width: 80%;
+        background: linear-gradient(to right, #68E093, #68E9CF);  
+    }
+    .especializacion .flechitas{  
+        padding-left: 65%;
+        height: 15vh;        
+        width: 30%;
+    }
+    .especializacion .flechitas .spanUno{        
+        left: 82%;              
+    }
+    .especializacion .flechitas .spanDos{
+        right: 28%;            
+    }
+    .especializacion .especializacionContenido .especializacionContenidoBis{ 
+        display: none; 
+    }
+    .especializacion .especializacionContenido .especializacionContenidoBisBeta{ 
+        display: none; 
+    }
+    
+    /* SECCION 4 - EXPERIENCIA */
+    .experiencia .container{        
+        height: 150vh;        
+    }
+    .experiencia .tituloDerecha h1{  
+        font-size: 2rem;
+    }
+    .experiencia .tituloDerecha h3{      
+        font-size: 2rem;
+        padding-bottom: 40%;
+    }
+    .experiencia .experienciaDatos .experienciaDatosUno{      
+        width: 100%;
+    }
+    .experiencia .experienciaDatos .experienciaDatosDos{ 
+        display: none;
+    }    
+
+    /* SECCION 5 - HABILIDADES */
+    .habilidades .tituloIzquierda{        
+        width: 74%;       
+    }
+    .habilidades .tituloIzquierda h1{          
+        font-size: 2rem;        
+    }
+    .habilidades .tituloIzquierda h3{
+        font-size: 2rem;         
+    }
+    .habilidades .container .habilidadesTotales{        
+        flex-direction: column;        
+        border: 2px solid rgb(255, 255, 255); 
+    }
+    .habilidades .container .habilidadesTotales .habilidadesUno{
+        width: 100%;        
+    }
+    .habilidades .container .habilidadesTotales .habilidadesDos{
+        width: 100%;       
+    }
+    .habilidades .descargarCV{
+        display: none;
+    }
+
+    /* SECCION 6 - PORTFOLIO */
+    .portfolio .container{
+        padding: 10% 8.4% 0 7.3%;      
+        height: 135vh;
+        position: relative; 
+        z-index: 1;        
+    }
+    .portfolio .tituloDerecha h1{          
+        font-size: 2rem;         
+    }
+    .portfolio .tituloDerecha h3{      
+        font-size: 2rem;        
+    }
+    .portfolio .portfolioMuestra{
+        flex-direction: column;    
+    }
+    .portfolio .portfolioMuestra img{        
+        height: 28vh;        
+    }
+    .portfolio .portfolioMuestra .portfolioMuestraUno{ 
+        margin-bottom: 10%;       
+        height: 50vh;
+        width: 100%;           
+    }
+    .portfolio .portfolioMuestra .portfolioMuestraDos{        
+        height: 50vh;
+        width: 100%;    
+    }
+    .portfolio .flechitas{  
+        padding-left: 65%;
+        height: 15vh;        
+        width: 30%;
+    }
+    .portfolio .flechitas .spanUno{        
+        left: 82%;              
+    }
+    .portfolio .flechitas .spanDos{
+        right: 28%;            
+    }
+
+    /* SECCION 7 - CONTACTO */
+    .contacto .tituloIzquierda h1{          
+        font-size: 2rem;         
+    }
+    .contacto .tituloIzquierda h3{      
+        font-size: 2rem;        
+    }
+    .contacto .container .contenidoMapa .inputs{
+        width: 100%; 
+    }
+    .contacto .container .contenidoMapa .inputs .enviarMensaje button{         
+        width: 100%;       
+    }
+    .contacto .container .contenidoMapa .mapa { 
+        display: none;
+    }
+}
+@media (max-width: 390px){
+    /* HEADER */
+    /* HERO */
+    /* SECCION 2 - ACERCA DE MÍ */
+    /* SECCION 3 - ESPECIALIZACIÓN */
+    /* SECCION 4 - EXPERIENCIA */
+    /* SECCION 5 - HABILIDADES */
+    /* SECCION 6 - PORTFOLIO */
+    /* SECCION 7 - CONTACTO */
 }
