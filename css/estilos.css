@@ -122,6 +122,13 @@ header .barras{
 }
 header .barras div{    
     padding: 4% 2% 4% 2%;
+    cursor: pointer;
+}
+header .barras div:hover{
+    scale: 1.02;    
+}
+header .barras div:active{
+    scale: 0.95;
 }
 header .barras .uno{    
     width: 6rem;
@@ -133,6 +140,7 @@ header .barras .dos{
     height: 0.2rem;
     background: white;    
 }
+
 
 
 /* SECCIÓN 1 - HERO */
@@ -246,7 +254,7 @@ header .barras .dos{
 .hero .descargarCV{
     padding-top: 10%;
     margin-left: 0;
-    width: 40%;
+    width: 40%;    
     /* border: 2px solid rgb(255, 255, 255);  */
 }
 
@@ -264,10 +272,18 @@ header .barras .dos{
     left: 17%;
     position: relative;
     top: -3.5rem;
+    cursor: pointer;
+}
+.hero .descargarCV p:hover{
+    scale: 1.02;    
+}
+.hero .descargarCV p:active{
+    scale: 0.95;
 }
 .hero .contenidoHeroDos i{
     font-size: 2rem;
 } 
+
 
 
 
@@ -400,7 +416,14 @@ header .barras .dos{
 }
 .acercaDe .acercaDeContenidoRedes .redes .circuloVerde{
     background-color: #68E9CF; 
-    color: white;   
+    color: white; 
+    cursor: pointer;  
+}
+.acercaDe .acercaDeContenidoRedes .redes div:hover{
+    scale: 1.02;    
+}
+.acercaDe .acercaDeContenidoRedes .redes div:active{
+    scale: 0.95;
 }
 
 /* sección 2 - Descargar CV */
@@ -422,6 +445,13 @@ header .barras .dos{
     left: 13%;
     position: relative;
     top: -3.5rem;
+    cursor: pointer;
+}
+.acercaDe .descargarCV p:hover{
+    scale: 1.02;    
+}
+.acercaDe .descargarCV p:active{
+    scale: 0.95;
 }
 .acercaDe .container .descargarCV i{
     font-size: 2rem;            
@@ -846,12 +876,32 @@ header .barras .dos{
     background: linear-gradient(to right, #68E9CF, #68E093);
 }
 .habilidades .container .habilidadesTotales .barraLaravel{  
+    width: 20%;
+    height: 2vh;
+    background: linear-gradient(to right, #68E9CF, #68E093);
+}
+.habilidades .container .habilidadesTotales .barraBootstrap{  
+    width: 70%;
+    height: 2vh;
+    background: linear-gradient(to right, #68E9CF, #68E093);
+}
+.habilidades .container .habilidadesTotales .barraJs{  
+    width: 40%;
+    height: 2vh;
+    background: linear-gradient(to right, #68E9CF, #68E093);
+}
+.habilidades .container .habilidadesTotales .barraPhp{  
     width: 50%;
     height: 2vh;
     background: linear-gradient(to right, #68E9CF, #68E093);
 }
-.habilidades .container .habilidadesTotales .barraVueJs{  
-    width: 30%;
+.habilidades .container .habilidadesTotales .barraReact{  
+    width: 85%;
+    height: 2vh;
+    background: linear-gradient(to right, #68E9CF, #68E093);
+}
+.habilidades .container .habilidadesTotales .barraMysql{  
+    width: 65%;
     height: 2vh;
     background: linear-gradient(to right, #68E9CF, #68E093);
 }
@@ -878,7 +928,15 @@ header .barras .dos{
     left: 17%;
     position: relative;
     top: -3.5rem;
+    cursor: pointer;
 }
+.habilidades .descargarCV p:hover{
+    scale: 1.02;    
+}
+.habilidades .descargarCV p:active{
+    scale: 0.95;
+}
+
 .habilidades .contenidoHeroDos i{
     font-size: 2rem;
 } 
@@ -955,6 +1013,7 @@ header .barras .dos{
 .portfolio .portfolioMuestra img{
     box-shadow: 0rem .5rem 1rem rgb(163, 162, 162);
     height: 35vh;
+    cursor: pointer; 
 }
 .portfolio .portfolioMuestra .portfolioMuestraUno{
     display: flex;
@@ -963,7 +1022,13 @@ header .barras .dos{
     height: 50vh;
     width: 48.5%;
     background-color: rgb(220, 223, 230); 
-    z-index: 2;   
+    z-index: 2;     
+}
+.portfolio .portfolioMuestra img:hover{
+    scale: 1.02;    
+}
+.portfolio .portfolioMuestra img:active{
+    scale: 0.95;
 }
 .portfolio .portfolioMuestra .portfolioMuestraDos{
     display: flex;
@@ -1123,6 +1188,12 @@ header .barras .dos{
     background-color: #68E9CF;
     border: none;
     cursor: pointer;       
+}
+.contacto .container .contenidoMapa .inputs .enviarMensaje button:hover{
+    scale: 1.02;    
+}
+.contacto .container .contenidoMapa .inputs .enviarMensaje button:active{
+    scale: 0.95;
 }
 .contacto .container .contenidoMapa .inputs .enviarMensaje button h3{     
     font-size: 1.8rem;
