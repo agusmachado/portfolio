@@ -1280,7 +1280,7 @@ body .lineaDerechaBis{
     /* HEADER */
     header{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         height: 10vh;
     }
     header h1{
@@ -1493,12 +1493,11 @@ body .lineaDerechaBis{
     }
 }
 @media (max-width: 390px){
-
-
-        /* IZQUIERDA */
+    /* BODY - LÍNEAS VERTICALES */
+    /* IZQUIERDA */
     body .lineaIzquierda{
         border-left: 0.12rem solid white;
-        height: 887vh;
+        height: 828vh;
         position: absolute;
         left: 7.3%;
         margin-left: -4;
@@ -1507,7 +1506,7 @@ body .lineaDerechaBis{
     }
     body .lineaIzquierdaBis{
         border-left: 0.12rem solid white;
-        height: 887vh;
+        height: 828vh;
         position: absolute;
         left: 19.5%;
         margin-left: -4;
@@ -1518,7 +1517,7 @@ body .lineaDerechaBis{
     /* DERECHA */
     body .lineaDerecha{
         border-left: 0.12rem solid white;
-        height: 887vh;
+        height: 828vh;
         position: absolute;
         right: 8.4%;
         margin-left: -4;
@@ -1527,7 +1526,7 @@ body .lineaDerechaBis{
     }
     body .lineaDerechaBis{
         border-left: 0.12rem solid white;
-        height: 887vh;
+        height: 828vh;
         position: absolute;
         right: 22.5%;
         margin-left: -4;
@@ -1537,7 +1536,7 @@ body .lineaDerechaBis{
         /* HEADER */
     header{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         height: 10vh;
     }
     header h1{
@@ -1629,10 +1628,10 @@ body .lineaDerechaBis{
         padding-bottom: 5%;
     }
     .especializacion .tituloIzquierda h1{              
-        font-size: 1.5rem;       
+        font-size: 1.37rem;       
     }
     .especializacion .tituloIzquierda h3{      
-        font-size: 1.5rem;                
+        font-size: 1.4rem;                
     }
     .especializacion .container .especializacionContenido{
         margin-top: 5%;           
@@ -1656,115 +1655,138 @@ body .lineaDerechaBis{
         width: 100%;
     }
     .especializacion .flechitas .spanUno{        
-        left: 83%;              
+        left: 81%;              
     }
     .especializacion .flechitas .spanDos{
         right: 52%;            
     }
-    .especializacion .especializacionContenido .especializacionContenidoBis{ 
-        display: none; 
-    }
-    .especializacion .especializacionContenido .especializacionContenidoBisBeta{ 
-        display: none; 
-    }
     
     /* SECCION 4 - EXPERIENCIA */
-    .experiencia .container{        
-        height: 150vh;        
-    }
+    .experiencia .container{
+        padding-top: 10%;
+        margin: 0% 0 0 2%;       
+        height: 165vh;
+        width: 95%;               
+    }    
     .experiencia .tituloDerecha h1{  
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .experiencia .tituloDerecha h3{      
-        font-size: 2rem;
-        padding-bottom: 40%;
+        font-size: 1.5rem;
+        padding-bottom: 80%;
     }
     .experiencia .experienciaDatos .experienciaDatosUno{      
         width: 100%;
     }
-    .experiencia .experienciaDatos .experienciaDatosDos{ 
-        display: none;
+    .experiencia .experienciaDatos .experienciaDatosUno .datosUnoBis{  
+        margin: 3% 3% 10% 0;
+        height: 68vh;
+        border: 2px solid rgb(0, 0, 0);
+    }
+    .experiencia .circuloSeis{ 
+        display: none;   
+}
+    .experiencia .circulo{    
+        display: none;   
     }    
 
+
     /* SECCION 5 - HABILIDADES */
-    .habilidades .tituloIzquierda{        
-        width: 74%;       
+    .habilidades .container{
+        padding: 10% 1% 25% 1%;        
+        width: 98%;      
+        height: 80vh;         
     }
-    .habilidades .tituloIzquierda h1{          
-        font-size: 2rem;        
-    }
-    .habilidades .tituloIzquierda h3{
-        font-size: 2rem;         
-    }
-    .habilidades .container .habilidadesTotales{        
-        flex-direction: column;     
-    }
-    .habilidades .container .habilidadesTotales .habilidadesUno{
-        width: 100%;        
-    }
-    .habilidades .container .habilidadesTotales .habilidadesDos{
+    .habilidades .tituloIzquierda{ 
+        padding-bottom: 15%;       
         width: 100%;       
     }
-    .habilidades .descargarCV{
-        display: none;
+    .habilidades .tituloIzquierda h1{          
+        font-size: 1.45rem;        
     }
+    .habilidades .tituloIzquierda h3{
+        font-size: 1.45rem;         
+    }
+    .habilidades .container .habilidadesTotales .data h1{
+        font-size: 1.5rem;
+        height: 4.7vh;  
+    }
+    .habilidades .container .habilidadesTotales .data h2{
+        font-size: 1.3rem;
+        height: 4.7vh;
+    }
+    
 
     /* SECCION 6 - PORTFOLIO */
     .portfolio .container{
-        padding: 10% 8.4% 0 7.3%;      
-        height: 135vh;
-        position: relative; 
-        z-index: 1;        
+        padding: 10% 2% 0 2%;      
+        height: 100vh;
     }
     .portfolio .tituloDerecha h1{          
-        font-size: 2rem;         
+        font-size: 1.5rem;         
     }
     .portfolio .tituloDerecha h3{      
-        font-size: 2rem;        
+        font-size: 1.5rem;        
     }
     .portfolio .portfolioMuestra{
         flex-direction: column;    
     }
     .portfolio .portfolioMuestra img{        
-        height: 28vh;        
+        height: 19vh;        
     }
     .portfolio .portfolioMuestra .portfolioMuestraUno{ 
         margin-bottom: 10%;       
-        height: 50vh;
+        height: 30vh;
         width: 100%;           
     }
     .portfolio .portfolioMuestra .portfolioMuestraDos{        
-        height: 50vh;
+        height: 30vh;
         width: 100%;    
     }
     .portfolio .flechitas{  
-        padding-left: 65%;
-        height: 15vh;        
-        width: 30%;
+        padding-left: 30%;       
+        width: 100%;
     }
     .portfolio .flechitas .spanUno{        
-        left: 82%;              
+        left: 81%;              
     }
     .portfolio .flechitas .spanDos{
-        right: 28%;            
+        right: 52%;            
     }
-
-    /* SECCION 7 - CONTACTO */
-    .contacto .tituloIzquierda h1{          
-        font-size: 2rem;         
+    .portfolio .circulo{    
+        display: none;  
     }
-    .contacto .tituloIzquierda h3{      
-        font-size: 2rem;        
-    }
-    .contacto .container .contenidoMapa .inputs{
-        width: 100%; 
-    }
-    .contacto .container .contenidoMapa .inputs .enviarMensaje button{         
-        width: 100%;       
-    }
-    .contacto .container .contenidoMapa .mapa { 
+    .portfolio .circuloSiete{ 
         display: none;
     }
+    
+
+    /* SECCION 7 - CONTACTO */
+    .contacto .tituloIzquierda .circuloCinco{ 
+        position: absolute;  
+        top: -5%;
+        left: -10%; 
+        width: 22rem;
+        height: 22rem;     
+        border: .1rem solid #68E9CF;
+        border-radius: 100%;
+        overflow: hidden;    
+    }
+    .contacto .tituloIzquierda h1{          
+        font-size: 1.5rem;         
+    }
+    .contacto .tituloIzquierda h3{      
+        font-size: 1.5rem;        
+    }
+    
+    .contacto .container .contenidoMapa .inputs .enviarMensaje button h3{     
+        font-size: 1.5rem;
+        color: white;         
+    }
+    .contacto .container .contenidoMapa .inputs .enviarMensaje button span{     
+        font-size: 3.5rem;    
+        color: white;     
+    }   
 
 
 
