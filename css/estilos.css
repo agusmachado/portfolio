@@ -925,8 +925,14 @@ header .barras .dos{
     background: none;
     border: 2px solid rgb(255, 255, 255);
 }
-.contacto .container .contenidoMapa .inputs .mensaje{     
-    height: 30vh;       
+.contacto .container .contenidoMapa .inputs .mensaje{ 
+    width: 100%;     
+    height: 30vh;
+    background: none;
+    font-size: 1.2rem; 
+    line-height: 1.5;  
+    color: white;
+    border: 2px solid rgb(255, 255, 255);       
 }
 .contacto .container .contenidoMapa .inputs .enviarMensaje{ 
     display: flex;
@@ -941,7 +947,8 @@ header .barras .dos{
     height: 10vh; 
     width: 50%;  
     background-color: #68E9CF;
-    border: none;       
+    border: none;
+    cursor: pointer;       
 }
 .contacto .container .contenidoMapa .inputs .enviarMensaje button h3{     
     font-size: 1.8rem;
@@ -967,4 +974,5 @@ header .barras .dos{
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);  
     height: 82vh;
+    /* cursor: pointer; */ 
 }
