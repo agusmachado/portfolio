@@ -475,6 +475,7 @@ header .barras .dos{
     display: flex;
     flex-direction: column;
     background-color: rgb(26, 26, 26);
+    z-index: -3;
     /* border: 2px solid rgb(255, 255, 255);  */
 }
 .especializacion .container{
@@ -645,6 +646,7 @@ header .barras .dos{
     display: flex;
     flex-direction: column;    
     background-color: rgb(27, 27, 27);
+    z-index: -3;
     /* border: 2px solid rgb(255, 255, 255); */
 }
 
@@ -781,8 +783,7 @@ header .barras .dos{
     rgba(17, 14, 14, 1) 57%,
     rgba(27, 27, 27, 1) 57%,
     rgba(27, 27, 27, 1) 100%);
-    /* background-color: rgb(211, 92, 92);
-     */
+    z-index: -3;
      /* border: 2px solid rgb(255, 255, 255); */
 }
 .habilidades .container{
@@ -791,13 +792,10 @@ header .barras .dos{
     position: relative;
     /* border: 2px solid rgb(255, 255, 255); */ 
 }
-.habilidades .habilidadesTotales{    
-    display: flex;
-    justify-content: center;
-}
+
 /* Sección 5 - Circulo Izquierda */
 
-.habilidades .tituloIzquierda .circuloCuatro{ 
+.habilidades .container .tituloIzquierda .circuloCuatro{ 
     position: absolute;  
     top: -45%;
     left: -13.5%; 
@@ -805,8 +803,10 @@ header .barras .dos{
     height: 22rem;     
     border: .1rem solid #68E9CF;
     border-radius: 100%;
-    overflow: hidden;    
+    overflow: hidden; 
+    z-index: 2; 
 }
+
 /* Sección 5 - Título Izquierda */
 .habilidades .tituloIzquierda{
     position: relative;
@@ -814,10 +814,12 @@ header .barras .dos{
     width: 73%;
     /* border: 2px solid rgb(255, 255, 255); */
 }
-.habilidades .tituloIzquierda h1{          
+.habilidades .tituloIzquierda h1{ 
+    position: relative;         
     font-size: 5rem;
     color: white;
     font-weight: 800;
+    z-index: 3;
     /* border: 2px solid rgb(255, 255, 255); */
 }
 .habilidades .tituloIzquierda h3{ 
@@ -830,6 +832,11 @@ header .barras .dos{
 }
 
 /* Sección 5 - Habilidades */
+
+/* .habilidades .habilidadesTotales{    
+    display: flex;
+    justify-content: center;
+} */
 .habilidades .container .habilidadesTotales{
     height: 65vh;
     display: flex;
@@ -956,6 +963,7 @@ header .barras .dos{
 /* SECCIÓN 6 - PORTFOLIO */
 .portfolio{    
     background-color: rgb(27, 27, 27);
+    z-index: -3;
 }
 .portfolio .container{
     padding: 10% 8.4% 0 7.3%;      
@@ -1107,6 +1115,7 @@ header .barras .dos{
         rgba(27, 27, 27, 1) 70%), url(../img/Mapa\ general\ bn.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: -3;
 }
 .contacto .container{
     padding: 10% 8.4% 0 7.3%;      
@@ -1135,7 +1144,8 @@ header .barras .dos{
     height: 22rem;     
     border: .1rem solid #68E9CF;
     border-radius: 100%;
-    overflow: hidden;    
+    overflow: hidden;   
+    z-index: -1; 
 }
 .contacto .tituloIzquierda h1{  
     position: relative;        
@@ -1336,7 +1346,7 @@ body .lineaDerechaBis{
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-right: 0;         
+        margin-right: 0;
     }
     .acercaDe .tituloIzquierda h3{      
         font-size: 2.6rem;
@@ -1552,7 +1562,7 @@ body .lineaDerechaBis{
         width: 3.5rem;
     }
     /* HERO */
-    .hero{
+    .hero{        
         height: 100vh;
         background-image:  linear-gradient(360deg,
         rgba(27, 27, 27, 1) 3%,
@@ -1642,17 +1652,17 @@ body .lineaDerechaBis{
     .especializacion .container .especializacionContenido .especializacionContenidoBisBeta01{ 
         height: 58vh;
         width: 100%;          
-    }
-    .especializacion .container .especializacionContenido .especializacionContenidoBisBeta01 .uno span{
+    }   
+    .especializacion .container .especializacionContenido .especializacionContenidoBisBeta01 .uno span{        
         font-size: 3rem;
         height: 52vh;
     }
     .especializacion .especializacionContenido .dos .numero{ 
-        font-size: 8rem; 
+        font-size: 7rem;         
     } 
     .especializacion .flechitas{  
-        padding-left: 30%;       
-        width: 100%;
+        padding-left: 33%;       
+        width: 68%;
     }
     .especializacion .flechitas .spanUno{        
         left: 81%;              
@@ -1680,8 +1690,7 @@ body .lineaDerechaBis{
     }
     .experiencia .experienciaDatos .experienciaDatosUno .datosUnoBis{  
         margin: 3% 3% 10% 0;
-        height: 68vh;
-        border: 2px solid rgb(0, 0, 0);
+        height: 68vh; 
     }
     .experiencia .circuloSeis{ 
         display: none;   
@@ -1692,10 +1701,10 @@ body .lineaDerechaBis{
 
 
     /* SECCION 5 - HABILIDADES */
-    .habilidades .container{
+    .habilidades .container{        
         padding: 10% 1% 25% 1%;        
         width: 98%;      
-        height: 80vh;         
+        height: 80vh;       
     }
     .habilidades .tituloIzquierda{ 
         padding-bottom: 15%;       
@@ -1706,7 +1715,7 @@ body .lineaDerechaBis{
     }
     .habilidades .tituloIzquierda h3{
         font-size: 1.45rem;         
-    }
+    }    
     .habilidades .container .habilidadesTotales .data h1{
         font-size: 1.5rem;
         height: 4.7vh;  
@@ -1715,6 +1724,10 @@ body .lineaDerechaBis{
         font-size: 1.3rem;
         height: 4.7vh;
     }
+    .habilidades .container .tituloIzquierda .circuloCuatro{
+        left: -33.5%; 
+    }
+   
     
 
     /* SECCION 6 - PORTFOLIO */
@@ -1744,14 +1757,14 @@ body .lineaDerechaBis{
         width: 100%;    
     }
     .portfolio .flechitas{  
-        padding-left: 30%;       
-        width: 100%;
+        padding-left: 33%;       
+        width: 67%;
     }
     .portfolio .flechitas .spanUno{        
-        left: 81%;              
+        left: 79%;             
     }
     .portfolio .flechitas .spanDos{
-        right: 52%;            
+        right: 52%;           
     }
     .portfolio .circulo{    
         display: none;  
