@@ -608,7 +608,14 @@ header .barras .dos{
     height: 5rem;
     width: 5rem;
     border-radius: 50%;
-    opacity: 0.5;   
+    opacity: 0.5; 
+    cursor: pointer;  
+}
+.especializacion .flechitas .flechitaUno:hover{
+    scale: 1.02;    
+}
+.especializacion .flechitas .flechitaUno:active{
+    scale: 0.95;
 }
 .especializacion .flechitas .spanUno{
     display: flex;
@@ -620,7 +627,14 @@ header .barras .dos{
     background-color: #68E9CF;  
     height: 5rem;
     width: 5rem;
-    border-radius: 50%;   
+    border-radius: 50%; 
+    cursor: pointer;  
+}
+.especializacion .flechitas .flechitaDos:hover{
+    scale: 1.02;    
+}
+.especializacion .flechitas .flechitaDos:active{
+    scale: 0.95;
 }
 .especializacion .flechitas .spanDos{
     display: flex;
@@ -1075,7 +1089,14 @@ header .barras .dos{
     height: 5rem;
     width: 5rem;
     border-radius: 50%;
-    opacity: 0.5;   
+    opacity: 0.5; 
+    cursor: pointer;  
+}
+.portfolio .flechitas .flechitaUno:hover{
+    scale: 1.02;    
+}
+.portfolio .flechitas .flechitaUno:active{
+    scale: 0.95;
 }
 .portfolio .flechitas .spanUno{
     display: flex;
@@ -1087,7 +1108,14 @@ header .barras .dos{
     background-color: #68E9CF;  
     height: 5rem;
     width: 5rem;
-    border-radius: 50%;   
+    border-radius: 50%;  
+    cursor: pointer; 
+}
+.portfolio .flechitas .flechitaDos:hover{
+    scale: 1.02;    
+}
+.portfolio .flechitas .flechitaDos:active{
+    scale: 0.95;
 }
 .portfolio .flechitas .spanDos{
     display: flex;
