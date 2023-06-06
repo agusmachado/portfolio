@@ -14,7 +14,7 @@ a{
 
 /* Sección 4 - Círculo Derecha */
 
-    body .circuloMil{ 
+/*     body .circuloMil{ 
         position: absolute;
         top: 405%;
         left: 81.4%;
@@ -27,10 +27,10 @@ a{
         transform: rotate(180deg);
         overflow: hidden;
         z-index: 1;    
-}
+} */
 
 /* Sección 6 - Círculo Derecha */
-
+/* 
 body .circuloMilUno{ 
     position: absolute;
     top: 730%;
@@ -44,7 +44,7 @@ body .circuloMilUno{
     transform: rotate(180deg);
     overflow: hidden;
     z-index: 1;    
-}
+} */
 
 /* BODY - LÍNEAS VERTICALES */
 /* IZQUIERDA */
@@ -706,19 +706,22 @@ header .barras .dos{
 
 
 /* SECCIÓN 4 - EXPERIENCIA */
-.experiencia{    
+.experiencia{ 
+    position: relative;   
     display: flex;
     flex-direction: column;    
     background-color: rgb(27, 27, 27);
     z-index: -3;
-    /* border: 2px solid rgb(255, 255, 255); */
+    overflow: hidden;
+    /* border: 2px solid rgb(255, 255, 255);  */
 }
 
 .experiencia .container{
     margin: 17% 8.4% 0 7.3%;
     height: 180vh;
     position: relative;
-    z-index: 1;    
+    z-index: 1;  
+    /* overflow: hidden;  */ 
     /* border: 2px solid rgb(255, 255, 255); */
 }
 
@@ -733,7 +736,21 @@ header .barras .dos{
     border-radius: 50%;
     opacity: 0.5;   
 }
+/* Sección 4 - Círculo Derecha */
 
+.experiencia .circuloMil{ 
+        position: absolute;
+        top: 9%;
+        left: 82%;
+        width: 22rem;
+        height: 22rem;
+        background-color: transparent;
+        border: .1rem solid #68E9CF;
+        border-radius: 50%;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 5% 50%);
+        transform: rotate(180deg);
+        overflow: hidden;          
+} 
 /* Sección 4 - Título Derecha */
 
 .experiencia .tituloDerecha{
@@ -1011,17 +1028,35 @@ header .barras .dos{
 
 
 /* SECCIÓN 6 - PORTFOLIO */
-.portfolio{    
+.portfolio{   
     background-color: rgb(27, 27, 27);
     z-index: -3;
+    /* border: 2px solid rgb(255, 255, 255); */
 }
 .portfolio .container{
     padding: 10% 8.4% 0 7.3%;      
     height: 100vh;
     position: relative; 
     z-index: 1;
-    /* border: 2px solid rgb(255, 255, 255); */ 
+    overflow: hidden;
+    /* border: 2px solid rgb(255, 255, 255);  */
 }
+
+/* Sección 6 - Círculo Derecha */
+
+.portfolio .circuloMilUno{ 
+    position: absolute;
+    top: 5%;
+    left: 82%;
+    width: 22rem;
+    height: 22rem;
+    background-color: transparent;
+    border: .1rem solid #68E9CF;
+    border-radius: 50%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 5% 50%);
+    transform: rotate(180deg);
+    overflow: hidden;          
+} 
 
 /* Sección 6 - Círculo Derecha */
 .portfolio .circulo{    
@@ -1310,42 +1345,9 @@ header .barras .dos{
 
 /* RESPONSIVE DESIGN */
 @media(max-width: 768px){
+ 
+/* BODY - LÍNEAS VERTICALES */
 
-
- /* Sección 4 - Círculo Derecha */
-
- body .circuloMil{ 
-    position: absolute;
-    top: 330%;
-    left: 61.4%;
-    width: 18rem;
-    height: 18rem;
-    background-color: transparent;
-    border: .1rem solid #68E9CF;
-    border-radius: 50%;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 5% 50%);
-    transform: rotate(180deg);
-    overflow: hidden;
-    z-index: 1;    
-}
-
-/* Sección 6 - Círculo Derecha */
-
-body .circuloMilUno{ 
-position: absolute;
-top: 599%;
-left: 61.4%;
-width: 18rem;
-height: 18rem;
-background-color: transparent;
-border: .1rem solid #68E9CF;
-border-radius: 50%;
-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 5% 50%);
-transform: rotate(180deg);
-overflow: hidden;
-z-index: 1;    
-}   
-    /* BODY - LÍNEAS VERTICALES */
 /* IZQUIERDA */
 body .lineaIzquierda{
     border-left: 0.12rem solid white;
@@ -1506,6 +1508,10 @@ body .lineaDerechaBis{
     .experiencia .container{        
         height: 150vh;        
     }
+    .experiencia .circuloMil{ 
+        top: 0;
+        left: 72%;                  
+    } 
     .experiencia .tituloDerecha h1{  
         font-size: 2rem;
     }
@@ -1550,6 +1556,10 @@ body .lineaDerechaBis{
         position: relative; 
         z-index: 1;        
     }
+    .portfolio .circuloMilUno{ 
+        top: 0;
+        left: 72%;                  
+    } 
     .portfolio .tituloDerecha h1{          
         font-size: 2rem;         
     }
@@ -1845,7 +1855,7 @@ body .circuloMilUno{
     .portfolio .container{
         padding: 10% 2% 0 2%;      
         height: 100vh;
-    }
+    }    
     .portfolio .tituloDerecha h1{          
         font-size: 1.5rem;         
     }
