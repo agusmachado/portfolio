@@ -20,3 +20,4 @@ El proyecto es un breve recorrido por mi trabjo profesional como Desarrollador W
 ## Contacto
 
 Puedes escribirme a mi mail: agusmachado@gmail.com y hacerme comentarios o sugerencias sobre el proyecto.
+![Página - TP - FINAL](https://github.com/agusmachado/portfolio/assets/57676547/6027b91b-8df6-4f51-9d43-aaab29d97a10)
