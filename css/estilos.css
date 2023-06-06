@@ -12,7 +12,39 @@ a{
     color: black;
 }
 
+/* Sección 4 - Círculo Derecha */
 
+    body .circuloMil{ 
+        position: absolute;
+        top: 394%;
+        left: 81.4%;
+        width: 22rem;
+        height: 22rem;
+        background-color: transparent;
+        border: .1rem solid #68E9CF;
+        border-radius: 50%;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 5% 50%);
+        transform: rotate(180deg);
+        overflow: hidden;
+        z-index: 1;    
+}
+
+/* Sección 6 - Círculo Derecha */
+
+body .circuloMilUno{ 
+    position: absolute;
+    top: 714%;
+    left: 81.4%;
+    width: 22rem;
+    height: 22rem;
+    background-color: transparent;
+    border: .1rem solid #68E9CF;
+    border-radius: 50%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 5% 50%);
+    transform: rotate(180deg);
+    overflow: hidden;
+    z-index: 1;    
+}
 
 /* BODY - LÍNEAS VERTICALES */
 /* IZQUIERDA */
@@ -193,7 +225,6 @@ header .barras .dos{
     background-color: #68E9CF;
     border: none;
 }
-
 
 /* Sección 1 - Contenido */
 .hero .heroGeneral .contenidoHero{
@@ -521,7 +552,7 @@ header .barras .dos{
 .especializacion .especializacionContenido{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;    
    /*  border: 2px solid rgb(255, 255, 255); */ 
 }
 .especializacion .especializacionContenido .especializacionContenidoBis{ 
@@ -529,13 +560,18 @@ header .barras .dos{
     color: white;   
     height: 50vh;
     width: 30%;
+    cursor: pointer;
     /* border: 2px solid rgb(255, 255, 255); */ 
+}
+.especializacion .especializacionContenido .especializacionContenidoBis:hover{
+    background: linear-gradient(to right, #68E093, #68E9CF);
 }
 .especializacion .especializacionContenido .especializacionContenidoBisBeta{     
     display: flex;
     color: white;
     height: 50vh;
     width: 30%;
+    cursor: pointer;
     background: linear-gradient(to right, #68E093, #68E9CF);    
     /* border: 2px solid rgb(255, 255, 255); */
 }
@@ -668,6 +704,7 @@ header .barras .dos{
     margin: 17% 8.4% 0 7.3%;
     height: 180vh;
     position: relative;
+    z-index: 1;    
     /* border: 2px solid rgb(255, 255, 255); */
 }
 
@@ -681,22 +718,6 @@ header .barras .dos{
     width: 40rem;
     border-radius: 50%;
     opacity: 0.5;   
-}
-
-/* Sección 4 - Círculo Derecha */
-.experiencia .circuloSeis{ 
-        position: absolute;
-        top: -7%;
-        right: -9.5%;
-        width: 22rem;
-        height: 22rem;
-        background-color: transparent;
-        border: .1rem solid #68E9CF;
-        border-radius: 50%;
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 5% 50%);
-        transform: rotate(180deg);
-        overflow: hidden;
-        z-index: 1;    
 }
 
 /* Sección 4 - Título Derecha */
@@ -741,9 +762,10 @@ header .barras .dos{
     border: 2px solid rgb(0, 0, 0);
 }
 .experiencia .experienciaDatos .experienciaDatosUno .datosUnoBis div{ 
-    position: relative;
+    position: relative; 
     width: 85%;
     margin: 13% 10% 17% 10%;
+    z-index: 2;
     /* border: 2px solid rgb(0, 0, 0); */
 }
 .experiencia .experienciaDatos .experienciaDatosDos{ 
@@ -984,7 +1006,7 @@ header .barras .dos{
     height: 100vh;
     position: relative; 
     z-index: 1;
-    /*  border: 2px solid rgb(255, 255, 255);  */
+    /* border: 2px solid rgb(255, 255, 255); */ 
 }
 
 /* Sección 6 - Círculo Derecha */
@@ -998,27 +1020,13 @@ header .barras .dos{
     border-radius: 50%;
     opacity: 0.5;   
 }
-/* Sección 6 - Círculo Derecha */
-.portfolio .circuloSiete{ 
-    position: absolute;
-    top: 8%; 
-    right: 0%;
-    width: 22rem;
-    height: 22rem;
-    background-color: transparent;
-    border: .1rem solid #68E9CF;
-    border-radius: 50%;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 35% 50%);
-    transform: rotate(180deg);
-    overflow: hidden;
-    z-index: -1; 
-}
 
 /* Sección 6 - Título Derecha */
 
 .portfolio .tituloDerecha{
     display: flex; 
-    justify-content: flex-end;    
+    justify-content: flex-end; 
+   /*  border: 2px solid rgb(255, 255, 255);    */
 }
 .portfolio .tituloDerecha h1{          
     font-size: 5rem;
@@ -1275,6 +1283,41 @@ header .barras .dos{
 
 /* RESPONSIVE DESIGN */
 @media(max-width: 768px){
+
+
+ /* Sección 4 - Círculo Derecha */
+
+ body .circuloMil{ 
+    position: absolute;
+    top: 330%;
+    left: 61.4%;
+    width: 18rem;
+    height: 18rem;
+    background-color: transparent;
+    border: .1rem solid #68E9CF;
+    border-radius: 50%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 5% 50%);
+    transform: rotate(180deg);
+    overflow: hidden;
+    z-index: 1;    
+}
+
+/* Sección 6 - Círculo Derecha */
+
+body .circuloMilUno{ 
+position: absolute;
+top: 599%;
+left: 61.4%;
+width: 18rem;
+height: 18rem;
+background-color: transparent;
+border: .1rem solid #68E9CF;
+border-radius: 50%;
+clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 5% 50%);
+transform: rotate(180deg);
+overflow: hidden;
+z-index: 1;    
+}   
     /* BODY - LÍNEAS VERTICALES */
 /* IZQUIERDA */
 body .lineaIzquierda{
@@ -1531,6 +1574,19 @@ body .lineaDerechaBis{
     }
 }
 @media (max-width: 390px){
+
+    
+ /* Sección 4 - Círculo Derecha */
+
+ body .circuloMil{ 
+    display: none;   
+}
+
+/* Sección 6 - Círculo Derecha */
+
+body .circuloMilUno{ 
+    display: none;
+}   
     /* BODY - LÍNEAS VERTICALES */
     /* IZQUIERDA */
     body .lineaIzquierda{
